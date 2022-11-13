@@ -24,19 +24,19 @@ Hi! This is Yequan Bie's home on the web.
 
 *Research assistant* &#124; **Business AI Lab** &#124; **Nanyang Technological University** *(PI: Prof. Teoh Teik Toe)*
 
-Age Estimation and Facial Keypoint Detection Based on Improved MobileNet            2022.01-2022.03
+➢Age Estimation and Facial Keypoint Detection Based on Improved MobileNet   <p align="right" >2022.01-2022.03</p>
 
 
 
 *Research assistant* &#124; **Brain-Computer Interface & Brain Information Processing Center** &#124; **SCUT**
 
-A Bayesian Approach to Weakly Supervised Instance Segmentation 						    2021.05-2022.01
+➢A Bayesian Approach to Weakly Supervised Instance Segmentation  <p align="right" >2021.05-2022.01</p>
 
 
 
-*Core member* &#124; **National College Students' Innovative Entrepreneurial Training Plan Program** &#124; **SCUT**
+*Core member* &#124; **National College Students' Innovative Entrepreneurial Training Plan Program**
 
-Development of Logistics Sorting System Based on Cyber-Physical Systems    2020. 09-2022. 04 
+➢Development of Logistics Sorting System Based on Cyber-Physical Systems   <p align="right" >2020. 09-2022. 04 </p>
 
 
 
@@ -44,7 +44,7 @@ Development of Logistics Sorting System Based on Cyber-Physical Systems    2020.
 
 *Big Data Development Engineer Intern* &#124; **ByteDance (TikTok), Beijing Headquarters**
 
-Product Development and Engineering Architecture Department                                  2022.09 - present
+Product Development and Engineering Architecture Department   <p align="right" >2022.09 - present</p>
 
 ➢ Assist with the construction of an efficient, real-time and stable computing engine to support the recommendation and advertising business of dozens of product lines within the company (TikTok, Toutiao, etc.)
 
@@ -56,7 +56,7 @@ Product Development and Engineering Architecture Department                     
 
 **South China University of Technology (SCUT)**     Guangzhou, China
 
-Bachelor of Engineering in *Intelligent Science and Technology*  2019.09 - 2023.06
+Bachelor of Engineering in *Intelligent Science and Technology*  <p align="right" >2019.09 - 2023.06</p>
 
 **Overall GPA:** 3.80/4.0         90.2/100            **Third Year GPA:** 3.95/4.0 
 
@@ -66,7 +66,7 @@ Bachelor of Engineering in *Intelligent Science and Technology*  2019.09 - 2023.
 
 **University of California, Berkeley (Cal)**      Berkeley, CA, USA 
 
-**Overall GPA: 4.0/4.0** Visiting Student in *Electrical Engineering & Computer Sciences*    2022.01 - 2022.06
+**Overall GPA: 4.0/4.0** Visiting Student in *Electrical Engineering & Computer Sciences*   <p align="right" >2022.01 - 2022.06</p>
 
 **Core Courses:** Data Structures (A+), Java: Discovering its Power (rank 1st), Designing, Visualizing and Understanding Deep Neural Network (A), Principals & Techniques of Data Science (A)
 
@@ -76,7 +76,7 @@ Bachelor of Engineering in *Intelligent Science and Technology*  2019.09 - 2023.
 
 Shenzhen Middle School (SMS)  Shenzhen, China
 
-Honor department                     2016.09 - 2019.06
+Honor department                     <p align="right" >2016.09 - 2019.06</p>
 
 
 
