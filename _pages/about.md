@@ -24,19 +24,19 @@ Hi! This is Yequan Bie's home on the web.
 
 *Research assistant* &#124; **Business AI Lab** &#124; **Nanyang Technological University** *(PI: Prof. Teoh Teik Toe)*
 
-➢Age Estimation and Facial Keypoint Detection Based on Improved MobileNet   <p align="right" >2022.01-2022.03</p>
+➢ Age Estimation and Facial Keypoint Detection Based on Improved MobileNet   <p align="right" >2022.01-2022.03</p>
 
 
 
 *Research assistant* &#124; **Brain-Computer Interface & Brain Information Processing Center** &#124; **SCUT**
 
-➢A Bayesian Approach to Weakly Supervised Instance Segmentation  <p align="right" >2021.05-2022.01</p>
+➢ A Bayesian Approach to Weakly Supervised Instance Segmentation  <p align="right">2021.05-2022.01</p>
 
 
 
 *Core member* &#124; **National College Students' Innovative Entrepreneurial Training Plan Program**
 
-➢Development of Logistics Sorting System Based on Cyber-Physical Systems   <p align="right" >2020. 09-2022. 04 </p>
+➢ Development of Logistics Sorting System Based on Cyber-Physical Systems   <p align="right" >2020. 09-2022. 04 </p>
 
 
 
@@ -56,7 +56,9 @@ Product Development and Engineering Architecture Department   <p align="right" >
 
 **South China University of Technology (SCUT)**     Guangzhou, China
 
-Bachelor of Engineering in *Intelligent Science and Technology*  <p align="right" >2019.09 - 2023.06</p>
+Bachelor of Engineering in *Intelligent Science and Technology*    2019.09 - 2023.06
+
+<div style="font-size:16px"><span style="float:right">2019.09 - 2023.06</span>Bachelor of Engineering in <i>Intelligent Science and Technology</i> </div>
 
 **Overall GPA:** 3.80/4.0         90.2/100            **Third Year GPA:** 3.95/4.0 
 
@@ -66,7 +68,11 @@ Bachelor of Engineering in *Intelligent Science and Technology*  <p align="right
 
 **University of California, Berkeley (Cal)**      Berkeley, CA, USA 
 
-**Overall GPA: 4.0/4.0** Visiting Student in *Electrical Engineering & Computer Sciences*   <p align="right" >2022.01 - 2022.06</p>
+Visiting Student in *Electrical Engineering & Computer Sciences*    2022.01 - 2022.06
+
+<div style="font-size:16px"><span style="float:right">2022.01 - 2022.06</span>Visiting Student in <i>Electrical Engineering & Computer Sciences</i> </div>
+
+**Overall GPA: 4.0/4.0** 
 
 **Core Courses:** Data Structures (A+), Java: Discovering its Power (rank 1st), Designing, Visualizing and Understanding Deep Neural Network (A), Principals & Techniques of Data Science (A)
 
@@ -76,7 +82,7 @@ Bachelor of Engineering in *Intelligent Science and Technology*  <p align="right
 
 Shenzhen Middle School (SMS)  Shenzhen, China
 
-Honor department                     <p align="right" >2016.09 - 2019.06</p>
+Honor department                     2016.09 - 2019.06
 
 
 
