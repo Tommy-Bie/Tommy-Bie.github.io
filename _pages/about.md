@@ -58,7 +58,7 @@ Hi! This is Yequan Bie's home on the web.
 
 ## Academic Performance
 
-**South China University of Technology (SCUT)**     Guangzhou, China
+<div style="font-size:19px"><span style="float:right"> Guangzhou, China</span><b>South China University of Technology (SCUT)</b></div>
 
 <div style="font-size:18px"><span style="float:right">2019.09 - 2023.06</span>Bachelor of Engineering in <i>Intelligent Science and Technology</i> </div>
 
@@ -68,7 +68,7 @@ Hi! This is Yequan Bie's home on the web.
 
 
 
-**University of California, Berkeley (Cal)**      Berkeley, CA, USA 
+<div style="font-size:19px"><span style="float:right"> Berkeley, CA, USA</span><b>University of California, Berkeley (Cal)</b></div>
 
 <div style="font-size:18px"><span style="float:right">2022.01 - 2022.06</span>Visiting Student in <i>Electrical Engineering & Computer Sciences</i> </div>
 
@@ -80,7 +80,7 @@ Hi! This is Yequan Bie's home on the web.
 
 
 
-Shenzhen Middle School (SMS)  Shenzhen, China
+<div style="font-size:19px"><span style="float:right"> Shenzhen, China</span>Shenzhen Middle School (SMS)</div>
 
 <div style="font-size:18px"><span style="float:right">2016.09 - 2019.06</span>Honor department </div>
 
