@@ -14,7 +14,7 @@ Hi! This is Yequan Bie's home on the web.
 
 
 
-- I am now a senior student majoring in Intelligenct Science and Technology at South China University  of Technology (SCUT). I am now also an intern at ByteDance (TikTok) Company, Beijing. 
+- I am now a senior student majoring in Intelligenct Science and Technology at South China University  of Technology (SCUT). I am now also an intern at ByteDance (TikTok) Company. 
 - I was a visiting student in Department of Electronic Engineering and Computer Sciences at UC Berkeley. I got an overall GPA of 4.0/4.0 and obtained Merit Scholarship during the sememter at UC Berkeley.
 - My research interest is in Software Engineering and Artificial Intelligence.
 
@@ -22,15 +22,19 @@ Hi! This is Yequan Bie's home on the web.
 
 ## Research Experience
 
-*Research assistant* &#124; **Business AI Lab** &#124; **Nanyang Technological University** *(PI: Prof. Teoh Teik Toe)*
+*Research assistant* &#124; **Business AI Lab** &#124; **Nanyang Technological University, Singapore**
 
 <div style="font-size:16px"><span style="float:right">2022.01-2022.03</span>➢ Age Estimation and Facial Keypoint Detection Based on Improved MobileNet </div>
+
+<br/>
 
 
 
 *Research assistant* &#124; **Brain-Computer Interface & Brain Information Processing Center** &#124; **SCUT**
 
 <div style="font-size:16px"><span style="float:right">2021.05-2022.01</span>➢ A Bayesian Approach to Weakly Supervised Instance Segmentation </div>
+
+<br/>
 
 
 
@@ -60,7 +64,7 @@ Hi! This is Yequan Bie's home on the web.
 
 **Overall GPA:** 3.80/4.0         90.2/100            **Third Year GPA:** 3.95/4.0 
 
-<br/>
+------
 
 
 
@@ -72,7 +76,7 @@ Hi! This is Yequan Bie's home on the web.
 
 **Core Courses:** Data Structures (A+), Java: Discovering its Power (rank 1st), Designing, Visualizing and Understanding Deep Neural Network (A), Principals & Techniques of Data Science (A)
 
-<br/>
+------
 
 
 
