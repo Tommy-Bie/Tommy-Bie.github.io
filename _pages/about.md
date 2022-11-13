@@ -22,19 +22,19 @@ Hi! This is Yequan Bie's home on the web.
 
 ## Research Experience
 
-*Research assistant* &#124 Business AI Lab &#124 **Nanyang Technological University** *(PI: Prof. Teoh Teik Toe)*
+*Research assistant* &#124; **Business AI Lab** &#124; **Nanyang Technological University** *(PI: Prof. Teoh Teik Toe)*
 
 Age Estimation and Facial Keypoint Detection Based on Improved MobileNet            2022.01-2022.03
 
 
 
-*Research assistant* &#124 Brain-Computer Interface & Brain Information Processing Center &#124 **SCUT**
+*Research assistant* &#124; **Brain-Computer Interface & Brain Information Processing Center** &#124; **SCUT**
 
 A Bayesian Approach to Weakly Supervised Instance Segmentation 						    2021.05-2022.01
 
 
 
-*Core member* &#124 National College Students' Innovative Entrepreneurial Training Plan Program &#124 **SCUT**
+*Core member* &#124; **National College Students' Innovative Entrepreneurial Training Plan Program** &#124; **SCUT**
 
 Development of Logistics Sorting System Based on Cyber-Physical Systems    2020. 09-2022. 04 
 
@@ -42,7 +42,7 @@ Development of Logistics Sorting System Based on Cyber-Physical Systems    2020.
 
 ## Professional Experience
 
-*Big Data Development Engineer Intern* &#124 ByteDance (TikTok), Beijing Headquarters
+*Big Data Development Engineer Intern* &#124; **ByteDance (TikTok), Beijing Headquarters**
 
 Product Development and Engineering Architecture Department                                  2022.09 - present
 
@@ -54,29 +54,29 @@ Product Development and Engineering Architecture Department                     
 
 ## Academic Performance
 
-**South China University of Technology (SCUT)**  Guangzhou, China
+**South China University of Technology (SCUT)**     Guangzhou, China
 
 Bachelor of Engineering in *Intelligent Science and Technology*  2019.09 - 2023.06
 
-**Overall GPA:** 3.80/4.0   90.2/100    **Third Year GPA:** 3.95/4.0 
+**Overall GPA:** 3.80/4.0         90.2/100            **Third Year GPA:** 3.95/4.0 
 
-</br>
+<br/>
 
 
 
-**University of California, Berkeley (Cal)**  Berkeley, CA, USA 
+**University of California, Berkeley (Cal)**      Berkeley, CA, USA 
 
 **Overall GPA: 4.0/4.0** Visiting Student in *Electrical Engineering & Computer Sciences*    2022.01 - 2022.06
 
 **Core Courses:** Data Structures (A+), Java: Discovering its Power (rank 1st), Designing, Visualizing and Understanding Deep Neural Network (A), Principals & Techniques of Data Science (A)
 
-</br>
+<br/>
 
 
 
 Shenzhen Middle School (SMS)  Shenzhen, China
 
-Honor department     2016.09 - 2019.06
+Honor department                     2016.09 - 2019.06
 
 
 
