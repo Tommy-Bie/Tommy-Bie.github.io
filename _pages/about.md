@@ -15,7 +15,7 @@ Hi! This is Yequan Bie's home on the web.
 
 
 - I am now a senior student majoring in Intelligenct Science and Technology at South China University  of Technology (SCUT). I am now also an intern at ByteDance (TikTok) Company. 
-- I was a visiting student in Department of Electronic Engineering and Computer Sciences at UC Berkeley. I got an overall GPA of 4.0/4.0 and obtained Merit Scholarship during the sememter at UC Berkeley.
+- I was a visiting student in Department of Electronic Engineering and Computer Sciences at UC Berkeley. I got an overall GPA of 4.0/4.0 and obtained Merit Scholarship during the semester at UC Berkeley.
 - My research interest is in Software Engineering and Artificial Intelligence.
 
 
