@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "About me"
-excerpt: "About me"
+title: "Yequan Bie's Homepage"
+excerpt: "Biography"
 author_profile: true
 redirect_from: 
   - /about/
@@ -14,9 +14,9 @@ Hi! This is Yequan Bie's home on the web.
 
 
 
-- I am now a senior student majoring in Intelligenct Science and Technology at South China University  of Technology (SCUT). I am now also an intern at ByteDance (TikTok) Company. 
+- I am now a senior student majoring in Intelligenct Science and Technology at South China University  of Technology (SCUT) and also prepared to be a Ph.D. student in the CSE department, HKUST, under the supervision of  [Prof. Hao Chen](https://cse.hkust.edu.hk/~jhc/).
 - I was a visiting student in Department of Electrical Engineering and Computer Sciences at UC Berkeley. I got an overall GPA of 4.0/4.0 and obtained Merit Scholarship during the semester at UC Berkeley.
-- My research interest is in Software Engineering and Artificial Intelligence.
+- My research interest now is in Artificial Intelligence especially Explainable AI and medical image analysis.
 
 
 
@@ -52,7 +52,7 @@ Hi! This is Yequan Bie's home on the web.
 
 ➢ Assist with the construction of an efficient, real-time and stable computing engine to support the recommendation and advertising business of dozens of product lines within the company (TikTok, Toutiao, etc.)
 
-➢ Develop and maintain the underlying components of cloud platforms used by the company, such as Toutiao Cloud Engine and Arnold (deep learning training platform), improved release efficiency by 12%
+➢ Develop and maintain the underlying components of cloud platforms used by the company, such as Toutiao Cloud Engine and Arnold (deep learning training platform), improved release efficiency by 40%
 
 
 
@@ -90,6 +90,7 @@ Hi! This is Yequan Bie's home on the web.
 
 | Title                                                        | Time              |
 | ------------------------------------------------------------ | ----------------- |
+| Aqara Innovation Scholarship                                 | 2022.10           |
 | UC Berkeley Extension SAF Merit Scholarship                  | 2022.01           |
 | China National Scholarship (Top 0.2%)                        | 2021.12           |
 | First-class Scholarship provided by Hongping Evergreen Fund  | 2021.07 / 2022.07 |
