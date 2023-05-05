@@ -16,7 +16,7 @@ Hi! This is Yequan Bie's home on the web.
 
 - I am now a senior student majoring in Intelligenct Science and Technology at South China University  of Technology (SCUT) and also prepared to be a Ph.D. student in the CSE department, HKUST, under the supervision of  [Prof. Hao Chen](https://cse.hkust.edu.hk/~jhc/).
 - I was a visiting student in Department of Electrical Engineering and Computer Sciences at UC Berkeley. I got an overall GPA of 4.0/4.0 and obtained Merit Scholarship during the semester at UC Berkeley.
-- My research interest now is in Artificial Intelligence especially Explainable AI and medical image analysis.
+- My research interest now is in Artificial Intelligence especially Explainable AI and Medical Image Analysis.
 
 
 
