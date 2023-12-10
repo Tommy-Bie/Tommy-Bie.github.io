@@ -14,11 +14,21 @@ Hi! This is Yequan Bie's home on the web.
 
 
 
-- I am now a senior student majoring in Intelligenct Science and Technology at South China University  of Technology (SCUT) and also prepared to be a Ph.D. student in the CSE department, HKUST, under the supervision of  [Prof. Hao Chen](https://cse.hkust.edu.hk/~jhc/).
-- I was a visiting student in Department of Electrical Engineering and Computer Sciences at UC Berkeley. I got an overall GPA of 4.0/4.0 and obtained Merit Scholarship during the semester at UC Berkeley.
-- My research interest now is in Artificial Intelligence especially Explainable AI and Medical Image Analysis.
+- I am now a Ph.D. student majoring in Computer Science and Engineering at the Hong Kong University of Science and Technology (HKUST), under the supervision of  [Prof. Hao Chen](https://cse.hkust.edu.hk/~jhc/). I obtained my bachelor's degree in Intelligent Science and Technology at South China University of Technology (SCUT) with honor.
+- I was a visiting student in the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley. I got an overall GPA of 4.0/4.0 and obtained Merit Scholarship during the semester at UC Berkeley.
+- My research interest now is in Artificial Intelligence, especially Multimodal, Explainable AI and Medical Image Analysis.
+
+## News
+
+- [2023.12] One paper got accepted by AAAI 2024!
+- [2023.08] I started my Ph.D. life at [SMART Lab](https://hkustsmartlab.netlify.app/) in HKUST.
+- [2023.08] I received HKUST RedBird PhD Award!
+- [2023.06] I obtained my bachleor's degree at SCUT!
+- [2023.06] I received Excellent Graduation Thesis Award at SCUT (Top 3%)!
 
 
+
+<!--
 
 ## Research Experience
 
@@ -42,6 +52,7 @@ Hi! This is Yequan Bie's home on the web.
 
 <div style="font-size:16px"><span style="float:right">2020. 09-2022. 04</span>➢ Development of Logistics Sorting System Based on Cyber-Physical Systems </div>
 
+-->
 
 
 ## Professional Experience
@@ -90,6 +101,7 @@ Hi! This is Yequan Bie's home on the web.
 
 | Title                                                        | Time              |
 | ------------------------------------------------------------ | ----------------- |
+| HKUST RedBird PhD Award                                      | 2023.08           |
 | Aqara Innovation Scholarship                                 | 2022.10           |
 | UC Berkeley Extension SAF Merit Scholarship                  | 2022.01           |
 | China National Scholarship (Top 0.2%)                        | 2021.12           |
@@ -103,6 +115,7 @@ Hi! This is Yequan Bie's home on the web.
 
 | Title                                                        | Time        |
 | ------------------------------------------------------------ | ----------- |
+| Excellent Graduation Thesis Award at SCUT (Top 3%) & 披星戴月奖 | 2023        |
 | Top Ten Merit Students Candidate of SCUT (Top 1%)            | 2022        |
 | Merit Student of SCUT (Top 5%)                               | 2021 / 2022 |
 | American Mathematical / Interdisciplinary Contest in Modeling – *Meritorious Winner* | 2021        |

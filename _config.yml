@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Yequan Bie"
 title_separator          : "-"
 name                     : &name "Yequan Bie"
-description              : &description "Senior student majoring in Intelligent Science and Technology @SCUT | Visiting student @UC Berkeley EECS"
+description              : &description "Ph.D. student majoring in Computer Science and Engineering @HKUST | Visiting student @UC Berkeley EECS"
 url                      : https://Tommy-Bie.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Tommy-Bie.github.io"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Yequan Bie"
   avatar           : "avatar.jpg"  # TODO
-  bio              : "Senior student majoring in Intelligent Science and Technology @SCUT     ------ Visiting student @UC Berkeley EECS"
-  location         : "Shenzhen/Guangzhou, China"
+  bio              : "Ph.D. student majoring in Computer Science and Engineering @HKUST     ------ Visiting student @UC Berkeley EECS"
+  location         : "Hongkong/Shenzhen, China"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"  # TODO
-  email            : "yequan@gmail.com"
+  email            : "yequanbie@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
