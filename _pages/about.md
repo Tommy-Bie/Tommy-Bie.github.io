@@ -14,8 +14,8 @@ Hi! This is Yequan Bie's home on the web.
 
 
 
-- I am now a Ph.D. student majoring in Computer Science and Engineering at the Hong Kong University of Science and Technology (HKUST), under the supervision of  [Prof. Hao Chen](https://cse.hkust.edu.hk/~jhc/). I obtained my bachelor's degree in Intelligent Science and Technology at South China University of Technology (SCUT) with honor.
-- I was a visiting student in the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley. I got an overall GPA of 4.0/4.0 and obtained Merit Scholarship during the semester at UC Berkeley.
+- I am now a Ph.D. student majoring in Computer Science and Engineering at the Hong Kong University of Science and Technology ([HKUST](https://hkust.edu.hk)), under the supervision of  [Prof. Hao Chen](https://cse.hkust.edu.hk/~jhc/). I obtained my bachelor's degree in Intelligent Science and Technology at South China University of Technology ([SCUT](https://www.scut.edu.cn/en/)) with honor.
+- I was a visiting student in the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley ([Cal](https://www.berkeley.edu)). I got an overall GPA of 4.0/4.0 and obtained Merit Scholarship during the semester at UC Berkeley.
 - My research interest now is in Artificial Intelligence, especially Multimodal, Explainable AI and Medical Image Analysis.
 
 ## News
@@ -73,7 +73,7 @@ Hi! This is Yequan Bie's home on the web.
 
 <div style="font-size:18px"><span style="float:right">2019.09 - 2023.06</span>Bachelor of Engineering in <i>Intelligent Science and Technology</i> </div>
 
-**Overall GPA:** 3.80/4.0         90.2/100            **Third Year GPA:** 3.95/4.0 
+**Overall GPA:** 3.82/4.0         90.5/100            **Third Year GPA:** 3.95/4.0 
 
 ------
 
