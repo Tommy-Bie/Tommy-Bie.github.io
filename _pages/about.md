@@ -16,14 +16,15 @@ Hi! This is Yequan Bie's home on the web.
 
 - I am now a Ph.D. student majoring in Computer Science and Engineering at the Hong Kong University of Science and Technology ([HKUST](https://hkust.edu.hk)), under the supervision of  [Prof. Hao Chen](https://cse.hkust.edu.hk/~jhc/). I obtained my bachelor's degree in Intelligent Science and Technology at South China University of Technology ([SCUT](https://www.scut.edu.cn/en/)) with honor.
 - I was a visiting student in the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley ([Cal](https://www.berkeley.edu)). I got an overall GPA of 4.0/4.0 and obtained Merit Scholarship during the semester at UC Berkeley.
-- My research interest now is in Artificial Intelligence, especially Multimodal, Explainable AI and Medical Image Analysis.
+- My research interest now is in Artificial Intelligence, especially Trustworthy/Explainable AI, Vision-Language Foundation Models, and Medical Image Analysis.
 
 ## News
 
+- [2024.06] One paper got accepted by MICCAI 2024!
 - [2023.12] One paper got accepted by AAAI 2024!
-- [2023.08] I started my Ph.D. life at [SMART Lab](https://hkustsmartlab.netlify.app/) in HKUST.
+- [2023.08] I started my Ph.D. life at [Smart Lab](https://hkustsmartlab.github.io/) in HKUST.
 - [2023.08] I received HKUST RedBird PhD Award!
-- [2023.06] I obtained my bachleor's degree at SCUT!
+- [2023.06] I obtained my bachelor's degree at SCUT!
 - [2023.06] I received Excellent Graduation Thesis Award at SCUT (Top 3%)!
 
 
@@ -59,7 +60,7 @@ Hi! This is Yequan Bie's home on the web.
 
 *Big Data Development Engineer Intern* &#124; **ByteDance (TikTok), Beijing Headquarters**
 
-<div style="font-size:18px"><span style="float:right">2022.09 - present</span>Product Development and Engineering Architecture Department </div>
+<div style="font-size:18px"><span style="float:right">2022.09 - 2023.01</span>Product Development and Engineering Architecture Department </div>
 
 ➢ Assist with the construction of an efficient, real-time and stable computing engine to support the recommendation and advertising business of dozens of product lines within the company (TikTok, Toutiao, etc.)
 
@@ -104,7 +105,7 @@ Hi! This is Yequan Bie's home on the web.
 | HKUST RedBird PhD Award                                      | 2023.08           |
 | Aqara Innovation Scholarship                                 | 2022.10           |
 | UC Berkeley Extension SAF Merit Scholarship                  | 2022.01           |
-| China National Scholarship (Top 0.2%)                        | 2021.12           |
+| China National Scholarship (Top 1%)                          | 2021.12           |
 | First-class Scholarship provided by Hongping Evergreen Fund  | 2021.07 / 2022.07 |
 | First-class MEAN WELL Scholarship (Top 1%)                   | 2021.04 / 2022.04 |
 | Student Award for Outstanding Contribution to Extracurricular Academic Science and Technology Innovation | 2020.11           |
