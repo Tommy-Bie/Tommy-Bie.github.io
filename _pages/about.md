@@ -20,6 +20,7 @@ Hi! This is Yequan Bie's home on the web.
 
 ## News
 
+- [2025.02] One paper got accepted by CVPR 2025!
 - [2024.06] One paper got accepted by MICCAI 2024!
 - [2023.12] One paper got accepted by AAAI 2024!
 - [2023.08] I started my Ph.D. life at [Smart Lab](https://hkustsmartlab.github.io/) in HKUST.
@@ -69,6 +70,16 @@ Hi! This is Yequan Bie's home on the web.
 
 
 ## Academic Performance
+
+<div style="font-size:19px"><span style="float:right"> HongKong, China</span><b>Hong Kong University of Science and Technology (HKUST)</b></div>
+
+<div style="font-size:18px"><span style="float:right">2023.09 - present</span>Ph.D. student of <i>Computer Science and Engineering</i> </div>
+
+**Overall GPA:** 3.963/4.0 
+
+------
+
+
 
 <div style="font-size:19px"><span style="float:right"> Guangzhou, China</span><b>South China University of Technology (SCUT)</b></div>
 

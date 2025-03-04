@@ -9,5 +9,5 @@ redirect_from:
 
 {% include base_path %}
 
-[CV](http://tommy-Bie.github.io/files/Yequan Bie - CV.pdf)
+[CV_2023.09](http://tommy-Bie.github.io/files/Yequan Bie - CV.pdf)
 
