@@ -20,6 +20,7 @@ Hi! This is Yequan Bie's home on the web.
 
 ## News
 
+- [2025.07] I received HKUST RedBird PhD Award for the second time.
 - [2025.02] One paper got accepted by CVPR 2025!
 - [2024.06] One paper got accepted by MICCAI 2024!
 - [2023.12] One paper got accepted by AAAI 2024!
@@ -75,7 +76,7 @@ Hi! This is Yequan Bie's home on the web.
 
 <div style="font-size:18px"><span style="float:right">2023.09 - present</span>Ph.D. student of <i>Computer Science and Engineering</i> </div>
 
-**Overall GPA:** 3.963/4.0 
+**Overall GPA:** 3.967/4.0 
 
 ------
 
@@ -113,7 +114,8 @@ Hi! This is Yequan Bie's home on the web.
 
 | Title                                                        | Time              |
 | ------------------------------------------------------------ | ----------------- |
-| HKUST RedBird PhD Award                                      | 2023.08           |
+| HKUST RedBird PhD Award                                      | 2025.07           |
+| HKUST RedBird PhD Award (Entrance scholarship with 4w HKD cash and tuition waiver) | 2023.08           |
 | Aqara Innovation Scholarship                                 | 2022.10           |
 | UC Berkeley Extension SAF Merit Scholarship                  | 2022.01           |
 | China National Scholarship (Top 1%)                          | 2021.12           |
