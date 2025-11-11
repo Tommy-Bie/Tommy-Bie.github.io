@@ -20,7 +20,7 @@ Hi! This is Yequan Bie's home on the web.
 
 ## News
 
-- [2025.11] One paper got accepted by AAAI 2026!
+- [2025.11] One paper got accepted by AAAI 2026! See you in Singapore!
 - [2025.07] I received HKUST RedBird PhD Award for the second time!
 - [2025.02] One paper got accepted by CVPR 2025!
 - [2024.06] One paper got accepted by MICCAI 2024!
