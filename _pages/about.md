@@ -20,7 +20,8 @@ Hi! This is Yequan Bie's home on the web.
 
 ## News
 
-- [2025.11] One paper got accepted by AAAI 2026! See you in Singapore!
+- [2026.01] One paper got accepted by **Nature Biomedical Engineering**!
+- [2025.11] One paper got accepted by AAAI 2026! 
 - [2025.07] I received HKUST RedBird PhD Award for the second time!
 - [2025.02] One paper got accepted by CVPR 2025!
 - [2024.06] One paper got accepted by MICCAI 2024!
@@ -77,7 +78,7 @@ Hi! This is Yequan Bie's home on the web.
 
 <div style="font-size:18px"><span style="float:right">2023.09 - present</span>Ph.D. student of <i>Computer Science and Engineering</i> </div>
 
-**Overall GPA:** 3.967/4.0 
+**Overall GPA:** 3.97/4.0 
 
 ------
 
