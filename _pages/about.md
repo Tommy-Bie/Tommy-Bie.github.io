@@ -105,7 +105,7 @@ Hi! This is Yequan Bie's home on the web.
 
 <div style="font-size:18px"><span style="float:right">2019.09 - 2023.06</span>Bachelor of Engineering in <i>Intelligent Science and Technology</i> </div>
 
-**Overall GPA:** 3.82/4.0         90.5/100            **Third Year GPA:** 3.95/4.0 (obtained China National Scholarship)
+**Overall GPA:** 3.82/4.0         90.5/100    (obtained China National Scholarship)        **Third Year GPA:** 3.95/4.0 
 
 ------
 
