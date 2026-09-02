@@ -20,13 +20,14 @@ Hi! This is Yequan Bie's home on the web.
 
 ## News
 
+- [2026.05] I received HKUST RedBird PhD Award for the third time!
 - [2026.01] One paper got accepted by **Nature Biomedical Engineering**!
 - [2025.11] One paper got accepted by AAAI 2026! 
 - [2025.07] I received HKUST RedBird PhD Award for the second time!
 - [2025.02] One paper got accepted by CVPR 2025!
 - [2024.06] One paper got accepted by MICCAI 2024!
 - [2023.12] One paper got accepted by AAAI 2024!
-- [2023.08] I started my Ph.D. life at [Smart Lab](https://hkustsmartlab.github.io/) in HKUST.
+- [2023.08] I started my Ph.D. life at [SmartX Lab](https://hkustsmartlab.github.io/) in HKUST.
 - [2023.08] I received HKUST RedBird PhD Award!
 - [2023.06] I obtained my bachelor's degree at SCUT!
 - [2023.06] I received Excellent Graduation Thesis Award at SCUT (Top 3%)!
@@ -66,9 +67,13 @@ Hi! This is Yequan Bie's home on the web.
 
 <div style="font-size:18px"><span style="float:right">2022.09 - 2023.01</span>Product Development and Engineering Architecture Department </div>
 
+<!--
+
 ➢ Assist with the construction of an efficient, real-time and stable computing engine to support the recommendation and advertising business of dozens of product lines within the company (TikTok, Toutiao, etc.)
 
 ➢ Develop and maintain the underlying components of cloud platforms used by the company, such as Toutiao Cloud Engine and Arnold (deep learning training platform), improved release efficiency by 40%
+
+-->
 
 
 
@@ -78,7 +83,19 @@ Hi! This is Yequan Bie's home on the web.
 
 <div style="font-size:18px"><span style="float:right">2023.09 - present</span>Ph.D. student of <i>Computer Science and Engineering</i> </div>
 
-**Overall GPA:** 3.97/4.0 
+**Overall GPA:** 3.97/4.0 (obtained RedBird PhD Scholarship for three times)
+
+------
+
+
+
+<div style="font-size:19px"><span style="float:right"> Berkeley, CA, USA</span><b>University of California, Berkeley (Cal/UCB)</b></div>
+
+<div style="font-size:18px"><span style="float:right">2022.01 - 2022.06</span>Visiting Student in <i>Electrical Engineering & Computer Sciences</i> </div>
+
+**Overall GPA: 4.0/4.0** (obtained UC Berkeley Extension Scholarship and two recommendation letters from course instructors)
+
+**Core Courses:** Data Structures (A+), Java: Discovering its Power (rank 1st), Designing, Visualizing and Understanding Deep Neural Network (A), Principals & Techniques of Data Science (A)
 
 ------
 
@@ -88,19 +105,7 @@ Hi! This is Yequan Bie's home on the web.
 
 <div style="font-size:18px"><span style="float:right">2019.09 - 2023.06</span>Bachelor of Engineering in <i>Intelligent Science and Technology</i> </div>
 
-**Overall GPA:** 3.82/4.0         90.5/100            **Third Year GPA:** 3.95/4.0 
-
-------
-
-
-
-<div style="font-size:19px"><span style="float:right"> Berkeley, CA, USA</span><b>University of California, Berkeley (Cal)</b></div>
-
-<div style="font-size:18px"><span style="float:right">2022.01 - 2022.06</span>Visiting Student in <i>Electrical Engineering & Computer Sciences</i> </div>
-
-**Overall GPA: 4.0/4.0** 
-
-**Core Courses:** Data Structures (A+), Java: Discovering its Power (rank 1st), Designing, Visualizing and Understanding Deep Neural Network (A), Principals & Techniques of Data Science (A)
+**Overall GPA:** 3.82/4.0         90.5/100            **Third Year GPA:** 3.95/4.0 (obtained China National Scholarship)
 
 ------
 
@@ -116,13 +121,14 @@ Hi! This is Yequan Bie's home on the web.
 
 | Title                                                        | Time              |
 | ------------------------------------------------------------ | ----------------- |
+| HKUST RedBird PhD Award                                      | 2026.05           |
 | HKUST RedBird PhD Award                                      | 2025.07           |
 | HKUST RedBird PhD Award (Entrance scholarship with 4w HKD cash and tuition waiver) | 2023.08           |
 | Aqara Innovation Scholarship                                 | 2022.10           |
 | UC Berkeley Extension SAF Merit Scholarship                  | 2022.01           |
 | China National Scholarship (Top 1%)                          | 2021.12           |
 | First-class Scholarship provided by Hongping Evergreen Fund  | 2021.07 / 2022.07 |
-| First-class MEAN WELL Scholarship (Top 1%)                   | 2021.04 / 2022.04 |
+| First-class MEAN WELL Scholarship (Top 1%, twice)            | 2021.04 / 2022.04 |
 | Student Award for Outstanding Contribution to Extracurricular Academic Science and Technology Innovation | 2020.11           |
 
 
