@@ -449,6 +449,14 @@
             color: var(--text-light);
             margin-bottom: 4px;
         }
+
+        .exp-scholarship {
+            font-size: 12px;
+            line-height: 1.45;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin: 5px 0 8px;
+        }
         
         .exp-period {
             font-size: 12px;
@@ -863,18 +871,21 @@
           "company": "HKUST",
           "period": "2023.09 - Present",
           "title": "Ph.D. Student, Computer Science & Engineering",
+          "scholarship": "RedBird PhD Award × 3",
           "logoUrl": "images/education/hkust.svg"
         },
         {
           "company": "UC Berkeley",
           "period": "2022.01 - 2022.06",
           "title": "Visiting Student, EECS (GPA: 4.0/4.0)",
+          "scholarship": "UC Berkeley Extension Merit Scholarship",
           "logoUrl": "images/education/uc_berkeley.svg"
         },
         {
           "company": "SCUT",
           "period": "2019.09 - 2023.06",
           "title": "B.Eng. in Intelligent Science and Technology",
+          "scholarship": "National Scholarship",
           "logoUrl": "images/education/scut.png"
         }
       ]
@@ -1109,8 +1120,10 @@
                 <i class="fas fa-trophy"></i> Honors & Awards
             </h2>
             <ul class="awards-list">
-                <li class="stagger-item"><strong>HKUST RedBird PhD Award / Scholarship</strong>, 2023, 2025, 2026.</li>
-                <li class="stagger-item"><strong>Excellent Graduation Thesis Award at SCUT</strong> (Top 3%), 2023.</li>
+                <li class="stagger-item"><strong>HKUST RedBird PhD Award / Scholarship</strong> (three times), 2023, 2025, 2026.</li>
+                <li class="stagger-item"><strong>Excellent Graduation Thesis Award at SCUT</strong> (Top 3%) & 披星戴月奖, 2023.</li>
+                <li class="stagger-item"><strong>Top Ten Merit Students Candidate of SCUT</strong> (Top 1%), 2022.</li>
+                <li class="stagger-item"><strong>Merit Student of SCUT</strong> (Top 5%), 2021 and 2022.</li>
                 <li class="stagger-item"><strong>UC Berkeley Extension SAF Merit Scholarship</strong>, 2022.</li>
                 <li class="stagger-item"><strong>China National Scholarship</strong> (Top 0.2%), 2021.</li>
                 <li class="stagger-item"><strong>First-class MEAN WELL Scholarship</strong> (Top 1%, twice), 2021 and 2022.</li>
@@ -1182,6 +1195,7 @@
                             </div>
                             <div class="exp-company">${exp.company}</div>
                             <div class="exp-title">${exp.title}</div>
+                            ${exp.scholarship ? `<div class="exp-scholarship"><i class="fas fa-award"></i> ${exp.scholarship}</div>` : ''}
                             ${exp.period ? `<div class="exp-period">${exp.period}</div>` : ''}
                         </div>
                     `;
