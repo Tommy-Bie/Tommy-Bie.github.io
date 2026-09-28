@@ -392,7 +392,7 @@
             opacity: 0.9;
         }
 
-        /* --- Experience (Grid Layout) --- */
+        /* --- Education & Experience (Grid Layout) --- */
         .experience-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -418,10 +418,10 @@
         }
 
         .exp-logo {
-            width: 64px;
+            width: 82px;
             height: 64px;
             margin-bottom: 15px;
-            border-radius: 50%;
+            border-radius: 12px;
             background: white;
             display: flex;
             align-items: center;
@@ -434,7 +434,7 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
-            border-radius: 50%;
+            border-radius: 8px;
         }
 
         .exp-company {
@@ -856,32 +856,45 @@
     </script>
 
     <!-- Site data -->
-    <script id="experience-data" type="application/json">
+    <script id="education-data" type="application/json">
     {
       "experiences": [
         {
           "company": "HKUST",
           "period": "2023.09 - Present",
           "title": "Ph.D. Student, Computer Science & Engineering",
-          "logoUrl": "https://ui-avatars.com/api/?name=HKUST&background=003366&color=fff"
-        },
-        {
-          "company": "ByteDance",
-          "period": "2022.09 - 2023.01",
-          "title": "Big Data Development Engineer Intern",
-          "logoUrl": "https://ui-avatars.com/api/?name=BD&background=325ab4&color=fff"
+          "logoUrl": "images/education/hkust.svg"
         },
         {
           "company": "UC Berkeley",
           "period": "2022.01 - 2022.06",
           "title": "Visiting Student, EECS (GPA: 4.0/4.0)",
-          "logoUrl": "https://ui-avatars.com/api/?name=Cal&background=003262&color=fdb515"
+          "logoUrl": "images/education/uc_berkeley.svg"
         },
         {
           "company": "SCUT",
           "period": "2019.09 - 2023.06",
           "title": "B.Eng. in Intelligent Science and Technology",
-          "logoUrl": "https://ui-avatars.com/api/?name=SCUT&background=8b0000&color=fff"
+          "logoUrl": "images/education/scut.png"
+        }
+      ]
+    }
+    </script>
+
+    <script id="experience-data" type="application/json">
+    {
+      "experiences": [
+        {
+          "company": "Tencent",
+          "period": "",
+          "title": "Intern",
+          "logoUrl": "images/education/tencent.png"
+        },
+        {
+          "company": "ByteDance",
+          "period": "2022.09 - 2023.01",
+          "title": "Big Data Development Engineer Intern",
+          "logoUrl": "images/education/bytedance.jpeg"
         }
       ]
     }
@@ -981,10 +994,11 @@
     <!-- Sticky Navigation -->
     <nav class="sticky-nav">
         <a href="#header" class="nav-link active">About</a>
-        <a href="#experience" class="nav-link">Education & Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#experience" class="nav-link">Experience</a>
         <a href="#news" class="nav-link">News</a>
-        <a href="#publications" class="nav-link">Publications</a>
         <a href="#awards" class="nav-link">Awards</a>
+        <a href="#publications" class="nav-link">Publications</a>
     </nav>
 
     <!-- Back to Top Button -->
@@ -1038,10 +1052,20 @@
             </div>
         </header>
 
+        <!-- EDUCATION -->
+        <section id="education" class="reveal">
+            <h2 class="section-title">
+                <i class="fas fa-graduation-cap"></i> Education
+            </h2>
+            <div id="education-list-container">
+                <!-- JS Will Populate This -->
+            </div>
+        </section>
+
         <!-- EXPERIENCE -->
         <section id="experience" class="reveal">
             <h2 class="section-title">
-                <i class="fas fa-graduation-cap"></i> Education & Experience
+                <i class="fas fa-briefcase"></i> Experience
             </h2>
             <div id="experience-list-container">
                 <!-- JS Will Populate This -->
@@ -1072,16 +1096,6 @@
             </div>
         </section>
 
-        <!-- PUBLICATIONS -->
-        <section id="publications" class="reveal">
-            <h2 class="section-title">
-                <i class="fas fa-book-open"></i> Publications
-            </h2>
-            <div id="publication-list-container">
-                <!-- JS Will Populate This -->
-            </div>
-        </section>
-
         <!-- AWARDS -->
         <section id="awards" class="reveal">
             <h2 class="section-title">
@@ -1097,6 +1111,16 @@
             </ul>
         </section>
 
+        <!-- PUBLICATIONS -->
+        <section id="publications" class="reveal">
+            <h2 class="section-title">
+                <i class="fas fa-book-open"></i> Publications
+            </h2>
+            <div id="publication-list-container">
+                <!-- JS Will Populate This -->
+            </div>
+        </section>
+
         <!-- FOOTER -->
         <footer>
             <p>
@@ -1108,6 +1132,8 @@
     <script>
         const pubDataElement = document.getElementById('publication-data');
         const pubContainer = document.getElementById('publication-list-container');
+        const educationDataElement = document.getElementById('education-data');
+        const educationContainer = document.getElementById('education-list-container');
         const expDataElement = document.getElementById('experience-data');
         const expContainer = document.getElementById('experience-list-container');
         const toggleBtn = document.getElementById('theme-toggle');
@@ -1135,10 +1161,10 @@
             updateIcon(newTheme);
         });
 
-        // --- 1. Render Experience ---
-        function renderExperience() {
+        // --- 1. Render Education & Experience ---
+        function renderCards(dataElement, container) {
             try {
-                const data = JSON.parse(expDataElement.textContent);
+                const data = JSON.parse(dataElement.textContent);
                 let html = '<div class="experience-grid">';
 
                 data.experiences.forEach((exp, index) => {
@@ -1149,13 +1175,13 @@
                             </div>
                             <div class="exp-company">${exp.company}</div>
                             <div class="exp-title">${exp.title}</div>
-                            <div class="exp-period">${exp.period}</div>
+                            ${exp.period ? `<div class="exp-period">${exp.period}</div>` : ''}
                         </div>
                     `;
                 });
 
                 html += '</div>';
-                expContainer.innerHTML = html;
+                container.innerHTML = html;
             } catch (error) { console.error(error); }
         }
 
@@ -1385,7 +1411,8 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            renderExperience();
+            renderCards(educationDataElement, educationContainer);
+            renderCards(expDataElement, expContainer);
             renderPublications();
             initNewsToggle();
             initTypewriter();
