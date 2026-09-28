@@ -1,0 +1,1396 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Yequan Bie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yequan Bie's academic homepage. Ph.D. student at HKUST working on vision-language models, agentic AI, post-training, trustworthy AI, and world models.">
+    <title>Yequan Bie - Academic Homepage</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* --- Core Variables & Reset --- */
+        :root {
+            /* Light Mode (Default) */
+            --primary-color: #2563eb;       /* Bright Blue */
+            --primary-dark: #1e40af;        /* Darker Blue */
+            --accent-color: #0f172a;        /* Dark Heading */
+            --text-main: #334155;           /* Main Text */
+            --text-light: #64748b;          /* Light Text */
+            --bg-body: #f8fafc;             /* Light Page BG */
+            --bg-card: #ffffff;             /* White Card BG */
+            --bg-card-hover: #fafbfc;       /* Hover Card BG */
+            --bg-header-start: #f1f5f9;
+            --bg-header-end: #ffffff;
+            --border-color: #e2e8f0;        /* Light Border */
+            --border-color-hover: #cbd5e1;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+            --highlight-red: #be123c;
+            --timeline-line: #e2e8f0;
+            --btn-bg: #ffffff;
+            --btn-text: #334155;
+            --nav-bg: rgba(255, 255, 255, 0.85); /* Glassmorphism Nav */
+            
+            /* Layout & Effects */
+            --max-width: 960px;
+            --radius-sm: 6px;
+            --radius-lg: 12px;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
+
+        /* --- Dark Mode Variables --- */
+        [data-theme="dark"] {
+            --primary-color: #60a5fa;       /* Lighter Blue for Dark Mode */
+            --primary-dark: #93c5fd;        /* Even lighter for hover */
+            --accent-color: #f1f5f9;        /* Light Heading */
+            --text-main: #e2e8f0;           /* Light Grey Text */
+            --text-light: #94a3b8;          /* Muted Grey Text */
+            --bg-body: #020617;             /* Very Dark Slate Page BG */
+            --bg-card: #1e293b;             /* Dark Slate Card BG */
+            --bg-card-hover: #334155;       /* Lighter Slate Hover */
+            --bg-header-start: #0f172a;     /* Header Gradient Start */
+            --bg-header-end: #1e293b;       /* Header Gradient End */
+            --border-color: #334155;        /* Dark Border */
+            --border-color-hover: #475569;
+            --shadow-color: rgba(0, 0, 0, 0.4);
+            --highlight-red: #fb7185;       /* Lighter Red */
+            --timeline-line: #334155;
+            --btn-bg: #1e293b;
+            --btn-text: #e2e8f0;
+            --nav-bg: rgba(30, 41, 59, 0.85);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            position: relative; /* For scroll spy */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        /* --- Preloader --- */
+        #preloader {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: var(--bg-body);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--border-color);
+            border-top-color: var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* --- Reading Progress Bar --- */
+        #progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            z-index: 1001; /* Above navbar */
+        }
+        
+        #progress-bar {
+            height: 100%;
+            background: var(--primary-color);
+            width: 0%;
+            transition: width 0.1s ease-out;
+            box-shadow: 0 0 10px var(--primary-color);
+        }
+
+        /* --- Sticky Navigation --- */
+        .sticky-nav {
+            position: sticky;
+            top: 20px;
+            z-index: 900;
+            max-width: var(--max-width);
+            margin: 0 auto 20px auto;
+            margin-bottom: 40px;
+            background: var(--nav-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 50px;
+            padding: 10px 30px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-md);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            transition: var(--transition);
+        }
+
+        .nav-link {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-light);
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary-color);
+            background-color: rgba(37, 99, 235, 0.1);
+        }
+
+        /* --- Layout Container --- */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto 40px auto; /* Margin top removed for nav */
+            background-color: var(--bg-card);
+            border-radius: var(--radius-lg);
+            box-shadow: 0 10px 15px -3px var(--shadow-color);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        /* --- Toggle Button (Theme) --- */
+        .theme-switch-wrapper {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        .theme-btn {
+            background: var(--btn-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 18px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .theme-btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            transform: rotate(15deg);
+        }
+
+        /* --- Header --- */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 50px;
+            background: linear-gradient(135deg, var(--bg-header-start) 0%, var(--bg-header-end) 100%);
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .profile-content {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .profile-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 5px;
+            letter-spacing: -0.5px;
+        }
+
+        /* --- Typewriter Effect --- */
+        .typing-wrapper {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 20px;
+            min-height: 28px;
+            display: flex;
+            align-items: center;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 2px;
+            height: 20px;
+            background-color: var(--primary-color);
+            margin-left: 5px;
+            animation: blink 0.7s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 14px;
+            background-color: var(--btn-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--btn-text);
+            transition: var(--transition);
+        }
+
+        .social-btn i {
+            margin-right: 6px;
+            color: var(--primary-color);
+        }
+
+        .social-btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .profile-bio {
+            font-size: 16px;
+            color: var(--text-main);
+            line-height: 1.8;
+        }
+
+        .profile-bio a {
+            color: var(--primary-color);
+            font-weight: 500;
+            border-bottom: 1px dashed rgba(37, 99, 235, 0.3);
+        }
+        
+        .profile-bio a:hover {
+            border-bottom-style: solid;
+        }
+
+        .profile-photo-wrapper {
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--bg-card);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+        
+        .profile-photo:hover {
+            transform: scale(1.02) rotate(2deg);
+        }
+
+        /* --- Sections & Animations --- */
+        section {
+            padding: 50px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        section:last-child {
+            border-bottom: none;
+        }
+
+        /* Scroll Reveal Animation Classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Staggered Delay for Children */
+        .stagger-item {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+        
+        .reveal.active .stagger-item {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Apply delays */
+        .reveal.active .stagger-item:nth-child(1) { transition-delay: 0.1s; }
+        .reveal.active .stagger-item:nth-child(2) { transition-delay: 0.2s; }
+        .reveal.active .stagger-item:nth-child(3) { transition-delay: 0.3s; }
+        .reveal.active .stagger-item:nth-child(4) { transition-delay: 0.4s; }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            color: var(--accent-color);
+            margin-bottom: 35px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .section-title i {
+            color: var(--primary-color);
+            margin-right: 12px;
+            font-size: 24px;
+            opacity: 0.9;
+        }
+
+        /* --- Experience (Grid Layout) --- */
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 25px;
+        }
+
+        .exp-card {
+            background: var(--btn-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 20px 15px;
+            text-align: center;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .exp-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--border-color-hover);
+        }
+
+        .exp-logo {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
+        }
+
+        .exp-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+
+        .exp-company {
+            font-weight: 600;
+            color: var(--accent-color);
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+
+        .exp-title {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 4px;
+        }
+        
+        .exp-period {
+            font-size: 12px;
+            color: #94a3b8;
+            background: var(--bg-header-start);
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+
+        /* --- News --- */
+        .news-container {
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .news-list {
+            list-style: none;
+            position: relative;
+        }
+        
+        .news-list::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            bottom: 5px;
+            width: 2px;
+            background-color: var(--timeline-line);
+            border-radius: 2px;
+        }
+
+        .news-item {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 18px;
+            font-size: 15px;
+            color: var(--text-main);
+            transition: max-height 0.5s ease, opacity 0.5s ease, margin-bottom 0.5s ease;
+        }
+        
+        /* Timeline Dot */
+        .news-item::after {
+            content: '';
+            position: absolute;
+            left: -4px;
+            top: 7px;
+            width: 10px;
+            height: 10px;
+            background-color: var(--bg-card);
+            border: 2px solid var(--primary-color);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .news-date {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--text-main);
+            margin-right: 8px;
+            display: inline-block;
+            min-width: 80px;
+        }
+        
+        .news-content {
+            color: var(--text-light);
+        }
+
+        .news-highlight {
+            color: var(--highlight-red);
+            font-weight: 500;
+            background-color: rgba(190, 18, 60, 0.05);
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+        
+        [data-theme="dark"] .news-highlight {
+            background-color: rgba(251, 113, 133, 0.1);
+        }
+
+        .news-item.collapsed {
+            max-height: 0;
+            opacity: 0;
+            margin-bottom: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        /* --- Publications --- */
+        .pub-year-header {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin: 40px 0 20px 0;
+            padding-left: 15px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .publication-card {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: var(--radius-lg);
+            border: 1px solid transparent;
+            transition: var(--transition);
+        }
+
+        .publication-card:hover {
+            background-color: var(--bg-card-hover);
+            border-color: var(--border-color);
+        }
+
+        .pub-img-wrapper {
+            flex: 0 0 240px;
+            height: 140px;
+            position: relative;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .pub-img-wrapper img,
+        .pub-img-wrapper video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.5s ease;
+        }
+        
+        .pub-img-wrapper:hover .main-media {
+            transform: scale(1.05);
+        }
+        
+        .pub-img-wrapper .hover-img {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            background: white;
+        }
+        
+        .pub-img-wrapper:hover .hover-img {
+            opacity: 1;
+        }
+
+        .pub-details {
+            flex: 1;
+        }
+
+        .pub-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .pub-authors {
+            font-size: 15px;
+            color: var(--text-light);
+            margin-bottom: 8px;
+        }
+        
+        .pub-authors strong {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        .pub-venue {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-main);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .venue-tag {
+            font-style: italic;
+        }
+        
+        .pub-highlight {
+            color: var(--highlight-red);
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .pub-badges img {
+            height: 18px;
+            vertical-align: middle;
+        }
+
+        /* Resource Links */
+        .pub-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .resource-link {
+            display: inline-flex;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-main);
+            background-color: var(--btn-bg);
+            border: 1px solid var(--border-color);
+            padding: 4px 10px;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+        
+        .resource-link i {
+            margin-right: 5px;
+            font-size: 11px;
+            color: var(--text-light);
+        }
+
+        .resource-link:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+        
+        .resource-link:hover i {
+            color: white;
+        }
+
+        /* --- Awards --- */
+        .awards-list {
+            list-style: none;
+        }
+
+        .awards-list li {
+            padding: 10px 0 10px 25px;
+            position: relative;
+            border-bottom: 1px dashed var(--border-color);
+            color: var(--text-main);
+        }
+        
+        .awards-list li:last-child {
+            border-bottom: none;
+        }
+
+        .awards-list li::before {
+            content: "\f091"; /* FontAwesome trophy */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 12px;
+            color: #fbbf24; /* Gold color */
+            font-size: 14px;
+        }
+        
+        .awards-list a {
+            color: var(--primary-color);
+        }
+
+        /* --- Footer --- */
+        footer {
+            padding: 40px;
+            text-align: center;
+            background-color: var(--bg-card);
+            border-top: 1px solid var(--border-color);
+        }
+        
+        footer p {
+            margin-top: 15px;
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        /* --- Toggle Btn (News) --- */
+        .toggle-btn {
+            margin: 20px auto 0;
+            display: block;
+            background: none;
+            border: none;
+            color: var(--primary-color);
+            font-weight: 600;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 14px;
+            transition: var(--transition);
+        }
+        
+        .toggle-btn:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+        /* --- Back to Top --- */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: var(--shadow-lg);
+            border: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            background-color: var(--primary-dark);
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 40px 20px;
+            }
+            
+            .theme-switch-wrapper {
+                top: 10px;
+                right: 10px;
+            }
+            
+            .sticky-nav {
+                top: 10px;
+                padding: 8px 15px;
+                gap: 5px;
+                font-size: 12px;
+                flex-wrap: wrap;
+            }
+            
+            .profile-content {
+                padding-right: 0;
+                margin-top: 25px;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .profile-photo {
+                width: 140px;
+                height: 140px;
+            }
+
+            section {
+                padding: 30px 20px;
+            }
+            
+            .publication-card {
+                flex-direction: column;
+                padding: 15px;
+                background-color: var(--bg-header-start); /* Mobile card bg */
+                border: 1px solid var(--border-color);
+            }
+            
+            .pub-img-wrapper {
+                width: 100%;
+                height: 160px;
+                flex: none;
+            }
+            
+            .news-item {
+                font-size: 14px;
+            }
+            
+            .news-date {
+                display: block;
+                margin-bottom: 4px;
+                color: var(--text-light);
+                font-size: 12px;
+            }
+        }
+    </style>
+    
+    <!-- Dark Mode Initial Check -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+
+    <!-- Site data -->
+    <script id="experience-data" type="application/json">
+    {
+      "experiences": [
+        {
+          "company": "HKUST",
+          "period": "2023.09 - Present",
+          "title": "Ph.D. Student, Computer Science & Engineering",
+          "logoUrl": "https://ui-avatars.com/api/?name=HKUST&background=003366&color=fff"
+        },
+        {
+          "company": "ByteDance",
+          "period": "2022.09 - 2023.01",
+          "title": "Big Data Development Engineer Intern",
+          "logoUrl": "https://ui-avatars.com/api/?name=BD&background=325ab4&color=fff"
+        },
+        {
+          "company": "UC Berkeley",
+          "period": "2022.01 - 2022.06",
+          "title": "Visiting Student, EECS (GPA: 4.0/4.0)",
+          "logoUrl": "https://ui-avatars.com/api/?name=Cal&background=003262&color=fdb515"
+        },
+        {
+          "company": "SCUT",
+          "period": "2019.09 - 2023.06",
+          "title": "B.Eng. in Intelligent Science and Technology",
+          "logoUrl": "https://ui-avatars.com/api/?name=SCUT&background=8b0000&color=fff"
+        }
+      ]
+    }
+    </script>
+
+    <script id="publication-data" type="application/json">
+    {
+      "categories": [
+        {
+          "title": "First / co-first author",
+          "pubs": [
+            {
+              "id": "knowledge-enhanced-prompting",
+              "title": "Knowledge-Enhanced Explainable Prompting for Vision-Language Models",
+              "authors": ["**Yequan Bie**", "et al."],
+              "venue": "AAAI 2026",
+              "links": []
+            },
+            {
+              "id": "mica",
+              "title": "MICA: Towards Explainable Skin Lesion Diagnosis via Multi-Level Image-Concept Alignment",
+              "authors": ["**Yequan Bie**", "et al."],
+              "venue": "AAAI 2024",
+              "links": []
+            },
+            {
+              "id": "xcoop",
+              "title": "XCoOp: Explainable Prompt Learning for Computer-Aided Diagnosis via Concept-Guided Context Optimization",
+              "authors": ["**Yequan Bie**", "et al."],
+              "venue": "MICCAI 2024",
+              "links": []
+            },
+            {
+              "id": "biomedical-foundation-model",
+              "title": "An Explainable Biomedical Foundation Model via Large-Scale Concept-Enhanced Vision-Language Pre-training",
+              "authors": ["Yuxiang Nie*", "Sunan He*", "**Yequan Bie***", "et al."],
+              "venue": "Nature Biomedical Engineering, 2026",
+              "links": []
+            },
+            {
+              "id": "chain-of-attack",
+              "title": "Chain of Attack: On the Robustness of Vision-Language Models Against Transfer-Based Adversarial Attacks",
+              "authors": ["Peng Xie*", "**Yequan Bie***", "et al."],
+              "venue": "CVPR 2025",
+              "links": []
+            }
+          ]
+        },
+        {
+          "title": "Selected publications",
+          "pubs": [
+            {
+              "id": "switchlingua",
+              "title": "SwitchLingua: The First Large-Scale Multilingual and Multi-Ethnic Code-Switching Dataset",
+              "authors": ["Peng Xie", "Xingyuan Liu", "**Yequan Bie**", "et al."],
+              "venue": "NeurIPS 2026",
+              "links": []
+            },
+            {
+              "id": "region-guided-ct",
+              "title": "Large Language Model with Region-Guided Referring and Grounding for CT Report Generation",
+              "authors": ["Zhixuan Chen", "**Yequan Bie**", "et al."],
+              "venue": "IEEE Transactions on Medical Imaging, 2025",
+              "links": []
+            },
+            {
+              "id": "dia-llama",
+              "title": "Dia-LLaMA: Towards Large Language Model-Driven CT Report Generation",
+              "authors": ["Zhixuan Chen", "Luyang Luo", "**Yequan Bie**", "et al."],
+              "venue": "MICCAI 2025",
+              "links": []
+            },
+            {
+              "id": "segment-anything-pathology",
+              "title": "Segment Anything in Pathology Images with Natural Language",
+              "authors": ["Zhixuan Chen", "...", "**Yequan Bie**", "et al."],
+              "venue": "arXiv preprint, 2025",
+              "links": []
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Reading Progress Bar Container -->
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav">
+        <a href="#header" class="nav-link active">About</a>
+        <a href="#experience" class="nav-link">Education & Experience</a>
+        <a href="#news" class="nav-link">News</a>
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#awards" class="nav-link">Awards</a>
+    </nav>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="container">
+        <!-- Theme Toggle -->
+        <div class="theme-switch-wrapper">
+            <button class="theme-btn" id="theme-toggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+
+        <!-- HEADER -->
+        <header id="header" class="reveal active">
+            <div class="profile-content stagger-item">
+                <h1 class="profile-name">
+                    Yequan Bie (别业泉)
+                </h1>
+                
+                <!-- Typewriter Effect -->
+                <div class="typing-wrapper">
+                    <span id="typing-text"></span>
+                    <span class="cursor"></span>
+                </div>
+
+                <div class="social-links">
+                    <a href="mailto:ybie@connect.ust.hk" class="social-btn">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    <a href="https://github.com/Tommy-Bie" target="_blank" rel="noopener noreferrer" class="social-btn">
+                        <i class="fab fa-github"></i> Github
+                    </a>
+                    <a href="files/BIE_Yequan_CV_2604_.pdf" target="_blank" class="social-btn">
+                        <i class="fas fa-file-pdf"></i> CV
+                    </a>
+                </div>
+                <div class="profile-bio">
+                    <p>
+                        I am a <strong>Ph.D. student in Computer Science and Engineering</strong> at the <a href="https://hkust.edu.hk" target="_blank" rel="noopener noreferrer">Hong Kong University of Science and Technology (HKUST)</a>, supervised by <a href="https://cse.hkust.edu.hk/~jhc/" target="_blank" rel="noopener noreferrer">Prof. Hao Chen</a>.
+                    </p>
+                    <p style="margin-top: 10px;">
+                        My research focuses on <strong>vision-language foundation models, agentic AI, post-training, trustworthy AI, and world models</strong>. Before HKUST, I earned my B.Eng. with honors from SCUT and studied as a visiting student at UC Berkeley EECS.
+                    </p>
+                </div>
+            </div>
+            <div class="profile-photo-wrapper stagger-item">
+                <img src="images/yequan-bie.jpg" alt="Yequan Bie" class="profile-photo" onerror="this.src='https://ui-avatars.com/api/?name=Yequan+Bie&background=2563eb&color=fff&size=200'">
+            </div>
+        </header>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="reveal">
+            <h2 class="section-title">
+                <i class="fas fa-graduation-cap"></i> Education & Experience
+            </h2>
+            <div id="experience-list-container">
+                <!-- JS Will Populate This -->
+            </div>
+        </section>
+
+        <!-- NEWS -->
+        <section id="news" class="reveal">
+            <h2 class="section-title">
+                <i class="fas fa-bullhorn"></i> Recent News
+            </h2>
+            <div class="news-container">
+                <ul class="news-list" id="news-list">
+                    <li class="news-item stagger-item"><span class="news-date">Sep 2026</span> <span class="news-content">One paper accepted by <strong>NeurIPS 2026</strong>.</span></li>
+                    <li class="news-item stagger-item"><span class="news-date">May 2026</span> <span class="news-content">Received the <span class="news-highlight">HKUST RedBird PhD Award</span> for the third time.</span></li>
+                    <li class="news-item stagger-item"><span class="news-date">Jan 2026</span> <span class="news-content">One paper accepted by <strong>Nature Biomedical Engineering</strong>.</span></li>
+                    <li class="news-item stagger-item"><span class="news-date">Nov 2025</span> <span class="news-content">One paper accepted by <strong>AAAI 2026</strong>.</span></li>
+                    <li class="news-item stagger-item"><span class="news-date">Jul 2025</span> <span class="news-content">Received the <span class="news-highlight">HKUST RedBird PhD Award</span> for the second time.</span></li>
+                    <li class="news-item stagger-item"><span class="news-date">Feb 2025</span> <span class="news-content">One paper accepted by <strong>CVPR 2025</strong>.</span></li>
+                    <li class="news-item stagger-item"><span class="news-date">Jun 2024</span> <span class="news-content">One paper accepted by <strong>MICCAI 2024</strong>.</span></li>
+                    <li class="news-item stagger-item"><span class="news-date">Dec 2023</span> <span class="news-content">One paper accepted by <strong>AAAI 2024</strong>.</span></li>
+                    <li class="news-item stagger-item"><span class="news-date">Aug 2023</span> <span class="news-content">Started my Ph.D. at <a href="https://hkustsmartlab.github.io/" target="_blank" rel="noopener noreferrer">SmartX Lab</a>, HKUST, and received the RedBird PhD Award.</span></li>
+                    <li class="news-item stagger-item"><span class="news-date">Jun 2023</span> <span class="news-content">Graduated from SCUT and received the <span class="news-highlight">Excellent Graduation Thesis Award</span> (Top 3%).</span></li>
+                </ul>
+                <button id="toggle-news-btn" class="toggle-btn">
+                    View More News <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- PUBLICATIONS -->
+        <section id="publications" class="reveal">
+            <h2 class="section-title">
+                <i class="fas fa-book-open"></i> Publications
+            </h2>
+            <div id="publication-list-container">
+                <!-- JS Will Populate This -->
+            </div>
+        </section>
+
+        <!-- AWARDS -->
+        <section id="awards" class="reveal">
+            <h2 class="section-title">
+                <i class="fas fa-trophy"></i> Honors & Awards
+            </h2>
+            <ul class="awards-list">
+                <li class="stagger-item"><strong>HKUST RedBird PhD Award / Scholarship</strong>, 2023, 2025, 2026.</li>
+                <li class="stagger-item"><strong>Excellent Graduation Thesis Award at SCUT</strong> (Top 3%), 2023.</li>
+                <li class="stagger-item"><strong>UC Berkeley Extension SAF Merit Scholarship</strong>, 2022.</li>
+                <li class="stagger-item"><strong>China National Scholarship</strong> (Top 0.2%), 2021.</li>
+                <li class="stagger-item"><strong>First-class MEAN WELL Scholarship</strong> (Top 1%, twice), 2021 and 2022.</li>
+                <li class="stagger-item"><strong>First-class Hongping Evergreen Fund Scholarship</strong> (twice), 2021 and 2022.</li>
+            </ul>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>
+                &copy; 2026 Yequan Bie. Built with <i class="fas fa-heart" style="color: #e11d48;"></i>.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        const pubDataElement = document.getElementById('publication-data');
+        const pubContainer = document.getElementById('publication-list-container');
+        const expDataElement = document.getElementById('experience-data');
+        const expContainer = document.getElementById('experience-list-container');
+        const toggleBtn = document.getElementById('theme-toggle');
+        const toggleIcon = toggleBtn.querySelector('i');
+        const html = document.documentElement;
+
+        // --- 0. Theme Toggle Logic ---
+        function updateIcon(theme) {
+            if (theme === 'dark') {
+                toggleIcon.classList.remove('fa-moon');
+                toggleIcon.classList.add('fa-sun');
+            } else {
+                toggleIcon.classList.remove('fa-sun');
+                toggleIcon.classList.add('fa-moon');
+            }
+        }
+
+        updateIcon(html.getAttribute('data-theme'));
+
+        toggleBtn.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        // --- 1. Render Experience ---
+        function renderExperience() {
+            try {
+                const data = JSON.parse(expDataElement.textContent);
+                let html = '<div class="experience-grid">';
+
+                data.experiences.forEach((exp, index) => {
+                    html += `
+                        <div class="exp-card stagger-item" style="transition-delay: ${index * 0.1}s">
+                            <div class="exp-logo">
+                                <img src="${exp.logoUrl}" alt="${exp.company} Logo" onerror="this.src='https://ui-avatars.com/api/?name=${exp.company.substring(0,2)}&background=random'">
+                            </div>
+                            <div class="exp-company">${exp.company}</div>
+                            <div class="exp-title">${exp.title}</div>
+                            <div class="exp-period">${exp.period}</div>
+                        </div>
+                    `;
+                });
+
+                html += '</div>';
+                expContainer.innerHTML = html;
+            } catch (error) { console.error(error); }
+        }
+
+        // --- 2. Render Publications ---
+        function isVideoUrl(url) {
+            if (!url) return false;
+            const normalizedUrl = url.trim().split('#')[0].split('?')[0].toLowerCase();
+            return normalizedUrl.endsWith('.mp4') || normalizedUrl.endsWith('.webm') || normalizedUrl.endsWith('.ogg');
+        }
+
+        function renderPublicationMedia(url, className, altText) {
+            if (!url) return '';
+
+            const safeUrl = url.trim();
+            if (isVideoUrl(safeUrl)) {
+                return `
+                    <video
+                        src="${safeUrl}"
+                        class="${className}"
+                        aria-label="${altText}"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata"
+                    ></video>
+                `;
+            }
+
+            return `<img src="${safeUrl}" class="${className}" alt="${altText}" onerror="this.src='https://placehold.co/400x300?text=Paper+Image'">`;
+        }
+
+        function renderPublications() {
+            try {
+                const data = JSON.parse(pubDataElement.textContent);
+                let html = '';
+
+                data.categories.forEach(category => {
+                    html += `<h3 class="pub-year-header stagger-item">${category.title}</h3>`;
+                    
+                    category.pubs.forEach((pub, index) => {
+                        let linksHtml = pub.links.map(link => `
+                            <a href="${link.url}" target="_blank" class="resource-link">
+                                <i class="fas ${link.icon || 'fa-solid fa-link'}"></i> ${link.text}
+                            </a>
+                        `).join('');
+
+                        let badgesHtml = '';
+                        if (pub.badge_stars || pub.badge_forks) {
+                            badgesHtml = '<span class="pub-badges">';
+                            if (pub.badge_stars) badgesHtml += `<img src="${pub.badge_stars}" style="margin-right:4px;">`;
+                            if (pub.badge_forks) badgesHtml += `<img src="${pub.badge_forks}">`;
+                            badgesHtml += '</span>';
+                        }
+                        
+                        const authorsHtml = pub.authors.join(', ').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                        const mainMedia = renderPublicationMedia(pub.imageUrl, 'main-media', pub.title);
+                        const mediaHtml = mainMedia ? `<div class="pub-img-wrapper">${mainMedia}${pub.hoverImageUrl ? `<img src="${pub.hoverImageUrl}" class="hover-img" alt="Result preview">` : ''}</div>` : '';
+                        const hoverImage = pub.hoverImageUrl ? `<img src="${pub.hoverImageUrl}" class="hover-img" alt="Result preview">` : '';
+
+                        html += `
+                            <article class="publication-card stagger-item">
+                                ${mediaHtml}
+                                <div class="pub-details">
+                                    <h4 class="pub-title">${pub.title}</h4>
+                                    <p class="pub-authors">${authorsHtml}</p>
+                                    <div class="pub-venue">
+                                        <span class="venue-tag">${pub.venue}</span>
+                                        ${badgesHtml}
+                                    </div>
+                                    <div class="pub-links">${linksHtml}</div>
+                                </div>
+                            </article>
+                        `;
+                    });
+                });
+                pubContainer.innerHTML = html;
+            } catch (error) { console.error(error); }
+        }
+
+        // --- 3. News Toggle Logic ---
+        function initNewsToggle() {
+            const newsList = document.getElementById('news-list');
+            const toggleNewsBtn = document.getElementById('toggle-news-btn');
+            if (!newsList || !toggleNewsBtn) return;
+
+            const items = newsList.querySelectorAll('.news-item');
+            const limit = 5;
+
+            if (items.length > limit) {
+                for (let i = limit; i < items.length; i++) {
+                    items[i].classList.add('collapsed');
+                }
+            } else {
+                toggleNewsBtn.style.display = 'none';
+            }
+
+            toggleNewsBtn.addEventListener('click', () => {
+                const isExpanded = toggleNewsBtn.getAttribute('data-expanded') === 'true';
+                
+                for (let i = limit; i < items.length; i++) {
+                    if (isExpanded) {
+                        items[i].classList.add('collapsed');
+                    } else {
+                        items[i].classList.remove('collapsed');
+                    }
+                }
+
+                if (!isExpanded) {
+                    toggleNewsBtn.innerHTML = 'Show Less <i class="fas fa-chevron-up"></i>';
+                    toggleNewsBtn.setAttribute('data-expanded', 'true');
+                } else {
+                    toggleNewsBtn.innerHTML = 'View More News <i class="fas fa-chevron-down"></i>';
+                    toggleNewsBtn.setAttribute('data-expanded', 'false');
+                }
+            });
+        }
+
+        // --- 4. Typewriter Effect ---
+        function initTypewriter() {
+            const texts = ["Ph.D. Student @ HKUST", "Vision-Language & Agentic AI Researcher", "Trustworthy AI & Post-Training"];
+            const typeText = document.getElementById('typing-text');
+            if (!typeText) return;
+
+            let textIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            let delay = 60;
+
+            function type() {
+                const currentText = texts[textIndex];
+                
+                if (isDeleting) {
+                    typeText.textContent = currentText.substring(0, charIndex - 1);
+                    charIndex--;
+                    delay = 25;
+                } else {
+                    typeText.textContent = currentText.substring(0, charIndex + 1);
+                    charIndex++;
+                    delay = 50;
+                }
+
+                if (!isDeleting && charIndex === currentText.length) {
+                    isDeleting = true;
+                    delay = 2000; // Pause at end
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % texts.length;
+                    delay = 500;
+                }
+
+                setTimeout(type, delay);
+            }
+            type();
+        }
+
+        // --- 5. Animation & Scroll Logic ---
+        function initAnimations() {
+            // Preloader fade out
+            const preloader = document.getElementById('preloader');
+            window.addEventListener('load', () => {
+                preloader.style.opacity = '0';
+                preloader.style.visibility = 'hidden';
+            });
+
+            // Scroll Reveal Observer (FIXED: Toggle active class)
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    } else {
+                        // FIX: Remove active class when out of view to re-trigger animation
+                        entry.target.classList.remove('active');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+            // Back to Top & Progress Bar
+            const backToTopBtn = document.getElementById('back-to-top');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section, header');
+            const progressBar = document.getElementById('progress-bar');
+
+            window.addEventListener('scroll', () => {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrollPercent = (scrollTop / docHeight) * 100;
+                
+                // Update Progress Bar
+                if(progressBar) progressBar.style.width = scrollPercent + '%';
+
+                // Back to Top visibility
+                if (scrollTop > 300) {
+                    backToTopBtn.classList.add('show');
+                } else {
+                    backToTopBtn.classList.remove('show');
+                }
+
+                // Scroll Spy for Nav
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    // const sectionHeight = section.clientHeight; // Unused
+                    if (pageYOffset >= (sectionTop - 150)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderExperience();
+            renderPublications();
+            initNewsToggle();
+            initTypewriter();
+            initAnimations();
+        });
+    </script>
+</body>
+</html>
