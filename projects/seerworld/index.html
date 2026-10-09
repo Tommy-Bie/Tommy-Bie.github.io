@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SeerWorld studies how generative video world models evolve entities beyond the current field of view.">
+  <meta name="theme-color" content="#07131d">
+  <title>SeerWorld — Out-of-Sight World Evolution</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="SeerWorld home">
+      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      <span>SeerWorld</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#overview">Overview</a>
+      <a href="#method">Method</a>
+      <a href="#data">Data</a>
+      <a href="#results">Results</a>
+      <a href="#demos">Demos</a>
+    </nav>
+    <a class="nav-home" href="../../" aria-label="Back to Yequan Bie's homepage">Personal site <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow hero-glow-a" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-b" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Generative video world models</p>
+        <h1 id="hero-title">The world should keep evolving—<em>even when unseen.</em></h1>
+        <p class="hero-deck">SeerWorld enables entities to remain active participants in a changing world, reason about off-screen events, and reveal plausible evolution when the camera returns.</p>
+        <div class="resource-row" aria-label="Project resources">
+          <a class="resource-button is-pending" href="#release-note" aria-describedby="release-note">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1Z"/><path d="M14 3.5V8h4M9 12h6M9 16h6"/></svg>
+            <span>Paper</span><small>soon</small>
+          </a>
+          <a class="resource-button is-pending" href="#release-note" aria-describedby="release-note">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18-6-6 6-6M15 6l6 6-6 6M14 4l-4 16"/></svg>
+            <span>Code</span><small>soon</small>
+          </a>
+          <a class="resource-button is-pending" href="#release-note" aria-describedby="release-note">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7.5 12 3l8 4.5-8 4.5-8-4.5Z"/><path d="m4 12 8 4.5 8-4.5M4 16.5 12 21l8-4.5"/></svg>
+            <span>Model</span><small>soon</small>
+          </a>
+          <a class="resource-button is-pending" href="#release-note" aria-describedby="release-note">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+            <span>Dataset</span><small>soon</small>
+          </a>
+          <a class="resource-button is-pending" href="#release-note" aria-describedby="release-note">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/><circle cx="4" cy="7" r="2"/><circle cx="10" cy="3" r="2"/><circle cx="16" cy="10" r="2"/></svg>
+            <span>Benchmark</span><small>soon</small>
+          </a>
+        </div>
+        <p id="release-note" class="release-note">Paper, code, model, SeerWorld-Data, and SeerWorld-Bench links will be activated for the public release.</p>
+      </div>
+
+      <div class="hero-cinema" aria-label="Selected SeerWorld video generations">
+        <div class="cinema-rail">
+          <figure class="cinema-card cinema-card-a">
+            <video muted loop playsinline autoplay preload="metadata" src="assets/videos/demo3_game.mp4"></video>
+            <figcaption><span>01</span> event enters the world</figcaption>
+          </figure>
+          <figure class="cinema-card cinema-card-b">
+            <video muted loop playsinline autoplay preload="metadata" src="assets/videos/demo6_natural.mp4"></video>
+            <figcaption><span>02</span> camera leaves the subject</figcaption>
+          </figure>
+          <figure class="cinema-card cinema-card-c">
+            <video muted loop playsinline autoplay preload="metadata" src="assets/videos/demo4_game.mp4"></video>
+            <figcaption><span>03</span> the subject has changed</figcaption>
+          </figure>
+        </div>
+        <div class="cinema-meta" aria-hidden="true">
+          <span>INITIAL</span><i></i><span>EVENT</span><i></i><span>REVISIT</span>
+        </div>
+        <button class="motion-toggle" type="button" aria-pressed="false">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></svg>
+          <span>Pause motion</span>
+        </button>
+      </div>
+
+      <a class="scroll-cue" href="#overview"><span>Scroll to explore</span><i aria-hidden="true"></i></a>
+    </section>
+
+    <section class="section challenge" id="overview">
+      <div class="section-index" aria-hidden="true">01</div>
+      <div class="section-heading reveal">
+        <p class="kicker">The challenge</p>
+        <h2>A coherent world is more than a remembered frame.</h2>
+        <p>When the observer looks away, new events should still alter the world. A successful model must execute the switched event, preserve the subject and scene, and render a causally plausible change when the camera returns.</p>
+      </div>
+      <div class="challenge-grid">
+        <div class="challenge-figure reveal">
+          <img src="assets/figures/challenge.png" alt="Comparison of out-of-sight evolution failures across video world models" loading="lazy">
+        </div>
+        <div class="challenge-list reveal">
+          <article><span>01</span><div><h3>Look away</h3><p>The camera leaves a visible subject and establishes an observation gap.</p></div></article>
+          <article><span>02</span><div><h3>Change the world</h3><p>A new event is introduced mid-rollout, without revealing the future response.</p></div></article>
+          <article><span>03</span><div><h3>Return and reveal</h3><p>The revisited subject must remain recognizable and show a plausible consequence.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section method" id="method">
+      <div class="section-index" aria-hidden="true">02</div>
+      <div class="section-heading reveal">
+        <p class="kicker">The framework</p>
+        <h2>A reasoning brain.<br>A visual world renderer.</h2>
+        <p>SeerWorld separates world-state reasoning from rendering. A VLM continuously records what the renderer actually generated, then reasons about an appropriate subject state after an event is observed.</p>
+      </div>
+      <div class="method-stage reveal">
+        <img src="assets/figures/pipeline.png" alt="SeerWorld framework with VLM brain, autoregressive visual renderer, Identity-Anchored Attention, and two-stage training" loading="lazy">
+      </div>
+      <div class="method-cards">
+        <article class="reveal"><b>01</b><h3>Persistent world memory</h3><p>The brain records visible entities, scenes, object states, and realized changes after every segment.</p></article>
+        <article class="reveal"><b>02</b><h3>Identity-Anchored Attention</h3><p>Retrieved entity evidence receives stronger attention when a subject reappears.</p></article>
+        <article class="reveal"><b>03</b><h3>Online rollout refinement</h3><p>Stage 2 trains on model-generated predecessors to reduce the train–inference gap.</p></article>
+      </div>
+    </section>
+
+    <section class="section data" id="data">
+      <div class="section-index" aria-hidden="true">03</div>
+      <div class="section-heading split reveal">
+        <div><p class="kicker">Data & benchmark</p><h2>Built for evolution beyond the frame.</h2></div>
+        <p>SeerWorld-Data provides segment-level supervision for event realization, long-range continuity, and behavioral change. SeerWorld-Bench tests the full event–revisit–reaction chain on screened, non-overlapping cases.</p>
+      </div>
+      <div class="stats-row reveal" aria-label="Dataset statistics">
+        <div><strong>12,118</strong><span>curated videos</span></div>
+        <div><strong>19</strong><span>event families</span></div>
+        <div><strong>16</strong><span>scene families</span></div>
+        <div><strong>14</strong><span>reaction types</span></div>
+        <div><strong>120</strong><span>benchmark cases</span></div>
+      </div>
+      <div class="data-panel reveal">
+        <img src="assets/figures/data-statistics.png" alt="SeerWorld-Data examples and dataset statistics" loading="lazy">
+      </div>
+      <div class="data-notes">
+        <article class="reveal"><span>SeerWorld-Data</span><h3>Learn the visual grammar of change</h3><p>Long videos with structured segment prompts teach camera motion, event execution, revisit consistency, and reactive rendering.</p><a href="#release-note">Dataset card coming soon <b>↗</b></a></article>
+        <article class="reveal"><span>SeerWorld-Bench</span><h3>Measure the entire causal chain</h3><p>Held-out and generated initial frames are screened against the training set using visual and semantic similarity audits.</p><a href="#results">See benchmark results <b>↓</b></a></article>
+      </div>
+    </section>
+
+    <section class="section results" id="results">
+      <div class="section-index" aria-hidden="true">04</div>
+      <div class="section-heading split reveal">
+        <div><p class="kicker">Benchmark results</p><h2>Strong evolution.<br>Stable worlds.</h2></div>
+        <p>SeerWorld dramatically improves complete task success while preserving subject identity, background continuity, visual integrity, and motion smoothness.</p>
+      </div>
+      <div class="result-hero reveal">
+        <div class="result-number"><span>Core task success</span><strong>90.8<small>%</small></strong><p>+69.1 points over the strongest baseline</p></div>
+        <div class="metric-grid">
+          <div><span>Revisit</span><strong>100.0</strong></div>
+          <div><span>Event</span><strong>97.5</strong></div>
+          <div><span>Causal</span><strong>94.2</strong></div>
+          <div><span>Reaction</span><strong>85.0</strong></div>
+          <div><span>Subject cons.</span><strong>99.2</strong></div>
+          <div><span>Background cons.</span><strong>98.3</strong></div>
+        </div>
+      </div>
+      <div class="leaderboard reveal">
+        <div class="leaderboard-head"><h3>SeerWorld-Bench leaderboard</h3><p>Scores in percent · higher is better</p></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Method</th><th>Core</th><th>Revisit</th><th>Event</th><th>Causal</th><th>React.</th><th>Visual</th><th>Subj.</th><th>Bg.</th><th>Motion</th></tr></thead>
+            <tbody>
+              <tr><td>LingBot-World</td><td>15.8</td><td>92.5</td><td>77.5</td><td>29.2</td><td>31.3</td><td>68.8</td><td>87.6</td><td>94.6</td><td>98.0</td></tr>
+              <tr><td>LingBot-World-v2</td><td>20.0</td><td>76.7</td><td>68.3</td><td>27.1</td><td>25.4</td><td>76.7</td><td>82.6</td><td>92.5</td><td>98.4</td></tr>
+              <tr><td>YUME-1.5</td><td>15.8</td><td>62.5</td><td>86.7</td><td>22.5</td><td>20.0</td><td>65.4</td><td>72.9</td><td>88.7</td><td>—</td></tr>
+              <tr><td>SANA-WM</td><td>13.3</td><td>88.3</td><td>67.5</td><td>26.7</td><td>24.2</td><td>53.8</td><td>67.7</td><td>90.8</td><td>98.7</td></tr>
+              <tr><td>Echo-WM</td><td>16.7</td><td>60.8</td><td>66.7</td><td>22.5</td><td>21.7</td><td><u>82.9</u></td><td><u>97.6</u></td><td>89.2</td><td>98.7</td></tr>
+              <tr><td>Evoke</td><td>20.0</td><td>95.8</td><td>80.0</td><td><u>32.9</u></td><td><u>36.3</u></td><td>78.3</td><td>93.5</td><td>95.4</td><td>99.0</td></tr>
+              <tr><td>Evoke-Turbo</td><td><u>21.7</u></td><td><u>98.3</u></td><td><u>89.2</u></td><td>32.5</td><td>29.6</td><td>65.4</td><td>97.0</td><td><u>96.2</u></td><td><u>99.1</u></td></tr>
+              <tr class="ours"><td><span>SeerWorld</span> <small>ours</small></td><td>90.8</td><td>100.0</td><td>97.5</td><td>94.2</td><td>85.0</td><td>83.8</td><td>99.2</td><td>98.3</td><td>99.5</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section demos" id="demos">
+      <div class="section-index" aria-hidden="true">05</div>
+      <div class="section-heading split reveal">
+        <div><p class="kicker">Generated worlds</p><h2>Watch the world change.</h2></div>
+        <p>Each rollout moves away from a subject, introduces an event, and returns to reveal the resulting state. Hover to inspect; click to expand.</p>
+      </div>
+      <div class="demo-grid">
+        <article class="demo-card demo-card-wide reveal" data-video="assets/videos/demo3_game.mp4" tabindex="0" role="button" aria-label="Expand armored guardian demo">
+          <video muted loop playsinline preload="metadata" src="assets/videos/demo3_game.mp4"></video>
+          <div class="demo-overlay"><span>Game world</span><h3>Threat detected. Defensive stance.</h3><button type="button" aria-label="Play armored guardian demo">▶</button></div>
+        </article>
+        <article class="demo-card reveal" data-video="assets/videos/demo6_natural.mp4" tabindex="0" role="button" aria-label="Expand natural world demo">
+          <video muted loop playsinline preload="metadata" src="assets/videos/demo6_natural.mp4"></video>
+          <div class="demo-overlay"><span>Natural world</span><h3>Events persist beyond view.</h3><button type="button" aria-label="Play natural world demo">▶</button></div>
+        </article>
+        <article class="demo-card reveal" data-video="assets/videos/demo1_sandbox.mp4" tabindex="0" role="button" aria-label="Expand sandbox demo">
+          <video muted loop playsinline preload="metadata" src="assets/videos/demo1_sandbox.mp4"></video>
+          <div class="demo-overlay"><span>Sandbox</span><h3>Return to an evolved scene.</h3><button type="button" aria-label="Play sandbox demo">▶</button></div>
+        </article>
+        <article class="demo-card reveal" data-video="assets/videos/demo5_game.mp4" tabindex="0" role="button" aria-label="Expand game environment demo">
+          <video muted loop playsinline preload="metadata" src="assets/videos/demo5_game.mp4"></video>
+          <div class="demo-overlay"><span>Game world</span><h3>Reason, revisit, react.</h3><button type="button" aria-label="Play game environment demo">▶</button></div>
+        </article>
+        <article class="demo-card demo-card-wide reveal" data-video="assets/videos/demo7_natural.mp4" tabindex="0" role="button" aria-label="Expand outdoor evolution demo">
+          <video muted loop playsinline preload="metadata" src="assets/videos/demo7_natural.mp4"></video>
+          <div class="demo-overlay"><span>Natural world</span><h3>Identity holds as behavior changes.</h3><button type="button" aria-label="Play outdoor evolution demo">▶</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section video-overview" id="video">
+      <div class="section-index" aria-hidden="true">06</div>
+      <div class="overview-placeholder reveal">
+        <div class="overview-orbit" aria-hidden="true"><span></span><i></i></div>
+        <p class="kicker">Video overview</p>
+        <h2>A guided tour of SeerWorld.</h2>
+        <p>Project talk and visual overview are in production.</p>
+        <button type="button" disabled><span>▶</span> Video coming soon</button>
+      </div>
+    </section>
+
+    <section class="section citation" id="citation">
+      <div class="section-index" aria-hidden="true">07</div>
+      <div class="citation-grid reveal">
+        <div><p class="kicker">Citation</p><h2>Build worlds that remember—and evolve.</h2><p>The BibTeX entry will be added when the paper is publicly available.</p></div>
+        <pre><code>@inproceedings{seerworld2027,
+  title  = {SeerWorld: Towards Out-of-Sight World
+            Evolution in Generative Video Models},
+  year   = {2027},
+  note   = {Citation details forthcoming}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span></span><span>SeerWorld</span></a>
+    <p>Towards out-of-sight world evolution in generative video models.</p>
+    <p class="footer-meta">Research preview · 2026</p>
+  </footer>
+
+  <dialog class="video-dialog" aria-label="Expanded video demo">
+    <button class="dialog-close" type="button" aria-label="Close video">×</button>
+    <video controls muted loop playsinline></video>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
