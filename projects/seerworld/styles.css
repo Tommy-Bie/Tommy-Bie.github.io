@@ -34,9 +34,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .site-header { position: fixed; inset: 18px 24px auto; z-index: 100; width: min(calc(100% - 48px), 1320px); margin-inline: auto; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 20px; padding: 11px 13px 11px 18px; color: #eaf4f4; background: rgba(6,17,26,.72); border: 1px solid rgba(255,255,255,.12); border-radius: 999px; box-shadow: 0 20px 50px rgba(0,0,0,.18); backdrop-filter: blur(18px); transition: background .3s, transform .3s; }
 .site-header.scrolled { background: rgba(6,17,26,.9); }
 .brand { display: inline-flex; align-items: center; gap: 10px; width: max-content; font-family: var(--sans); font-weight: 800; letter-spacing: -.03em; }
-.brand-mark { position: relative; display: inline-grid; place-items: center; width: 30px; height: 22px; border: 1.5px solid var(--amber); border-radius: 50% 8px 50% 8px; transform: rotate(-8deg); }
-.brand-mark::after { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--blue); box-shadow: 0 0 16px var(--blue); }
-.brand-mark span { position: absolute; width: 5px; height: 5px; border: 1px solid var(--ink); border-radius: 50%; z-index: 1; }
+.brand-mark { display: block; flex: 0 0 32px; width: 32px; height: 32px; }
 .nav-links { display: flex; align-items: center; gap: 7px; }
 .nav-links a { padding: 8px 11px; border-radius: 999px; color: rgba(234,244,244,.67); font-size: 12px; font-weight: 600; transition: .25s; }
 .nav-links a:hover, .nav-links a.active { color: #fff; background: rgba(255,255,255,.09); }
