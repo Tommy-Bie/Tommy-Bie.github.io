@@ -38,8 +38,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .nav-links { display: flex; align-items: center; gap: 7px; }
 .nav-links a { padding: 8px 11px; border-radius: 999px; color: rgba(234,244,244,.67); font-size: 12px; font-weight: 600; transition: .25s; }
 .nav-links a:hover, .nav-links a.active { color: #fff; background: rgba(255,255,255,.09); }
-.nav-home { justify-self: end; padding: 9px 14px; border: 1px solid rgba(255,255,255,.14); border-radius: 999px; color: #eaf4f4; font-size: 12px; font-weight: 600; transition: .25s; }
-.nav-home:hover { border-color: var(--amber); color: var(--amber-soft); }
 
 .hero { position: relative; min-height: 100svh; overflow: hidden; display: grid; grid-template-columns: minmax(360px,.88fr) minmax(480px,1.12fr); gap: clamp(30px,5vw,78px); align-items: center; padding: 130px max(5vw,40px) 80px; color: #f3f5f2; background: radial-gradient(circle at 70% 55%, #153549 0, transparent 37%), linear-gradient(135deg,#06111a 0%,#081926 52%,#0a1d26 100%); }
 .hero::before { content: ''; position: absolute; inset: 0; opacity: .14; background-image: linear-gradient(rgba(255,255,255,.12) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.12) 1px, transparent 1px); background-size: 80px 80px; mask-image: linear-gradient(to right, #000, transparent 80%); }
@@ -180,17 +178,6 @@ tr.ours small { margin-left: 6px; padding: 3px 6px; border-radius: 999px; backgr
 .demo-caption strong { display: inline-block; min-width: 56px; margin-right: 5px; color: var(--amber-soft); font-size: .65em; letter-spacing: .12em; text-transform: uppercase; vertical-align: .12em; }
 .demo-overlay button { width: 38px; height: 38px; border: 1px solid rgba(255,255,255,.35); border-radius: 50%; color: #fff; background: rgba(5,15,21,.5); cursor: pointer; backdrop-filter: blur(8px); }
 
-.video-overview { color: #eef5f3; background: #07131d; }
-.video-overview .section-index { color: rgba(255,255,255,.2); }
-.overview-placeholder { position: relative; min-height: 580px; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; text-align: center; border: 1px solid var(--line-dark); border-radius: 30px; background: radial-gradient(circle at center,rgba(66,169,192,.15),transparent 38%), linear-gradient(135deg,#0a202c,#07131d); }
-.overview-placeholder h2 { margin: 0; font: 700 clamp(46px,6vw,78px)/1 var(--sans); letter-spacing: -.06em; }
-.overview-placeholder > p:not(.kicker) { margin: 20px 0 26px; color: rgba(238,245,243,.5); }
-.overview-placeholder button { padding: 13px 20px; border: 1px solid rgba(255,255,255,.15); border-radius: 999px; color: rgba(255,255,255,.65); background: rgba(255,255,255,.05); font: 700 11px var(--sans); }
-.overview-placeholder button span { color: var(--amber); margin-right: 7px; }
-.overview-orbit { position: absolute; inset: 50% auto auto 50%; width: 600px; height: 300px; transform: translate(-50%,-50%) rotate(-8deg); border: 1px solid rgba(135,212,227,.13); border-radius: 50%; }
-.overview-orbit span, .overview-orbit i { position: absolute; width: 10px; height: 10px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 28px var(--amber); }
-.overview-orbit span { left: 8%; top: 24%; }
-.overview-orbit i { right: 10%; bottom: 20%; background: var(--blue); box-shadow: 0 0 28px var(--blue); }
 
 .citation { background: var(--amber); }
 .citation-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 70px; align-items: center; }
@@ -226,8 +213,6 @@ footer p { margin: 0; }
 
 @media (max-width: 760px) {
   .site-header { inset: 10px 12px auto; width: calc(100% - 24px); }
-  .nav-home { font-size: 0; }
-  .nav-home span { font-size: 12px; }
   .hero, .section { padding-left: 20px; padding-right: 20px; }
   .hero { overflow: hidden; padding-top: 120px; }
   h1 { font-size: clamp(48px,14vw,76px); }
