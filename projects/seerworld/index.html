@@ -53,26 +53,26 @@
             <svg aria-hidden="true" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
             <span>Dataset</span><small>HF</small>
           </a>
-          <a class="resource-button is-pending" href="#release-note" aria-describedby="release-note">
+          <a class="resource-button" href="https://huggingface.co/datasets/Tommy-Bie/SeerWorld-Bench" target="_blank" rel="noopener noreferrer">
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/><circle cx="4" cy="7" r="2"/><circle cx="10" cy="3" r="2"/><circle cx="16" cy="10" r="2"/></svg>
-            <span>Benchmark</span><small>soon</small>
+            <span>Benchmark</span><small>HF</small>
           </a>
         </div>
-        <p id="release-note" class="release-note">Paper, code, model, and SeerWorld-Bench links will be activated for the public release.</p>
+        <p id="release-note" class="release-note">Paper, code, and model links will be activated for the public release.</p>
       </div>
 
       <div class="hero-cinema" aria-label="Selected SeerWorld video generations">
         <div class="cinema-rail">
           <figure class="cinema-card cinema-card-a">
-            <video muted loop playsinline autoplay preload="metadata" src="assets/videos/demo2_sandbox.mp4"></video>
+            <video muted loop playsinline autoplay preload="metadata" src="assets/videos/result-02.mp4"></video>
             <figcaption><span>01</span> event enters the world</figcaption>
           </figure>
           <figure class="cinema-card cinema-card-b">
-            <video muted loop playsinline autoplay preload="metadata" src="assets/videos/demo6_natural.mp4"></video>
+            <video muted loop playsinline autoplay preload="metadata" src="assets/videos/result-06.mp4"></video>
             <figcaption><span>02</span> camera leaves the subject</figcaption>
           </figure>
           <figure class="cinema-card cinema-card-c">
-            <video muted loop playsinline autoplay preload="metadata" src="assets/videos/demo4_game.mp4"></video>
+            <video muted loop playsinline autoplay preload="metadata" src="assets/videos/result-04.mp4"></video>
             <figcaption><span>03</span> the subject has changed</figcaption>
           </figure>
         </div>
@@ -142,12 +142,46 @@
       </div>
       <div class="data-notes">
         <article class="reveal"><span>SeerWorld-Data</span><h3>Learn the visual grammar of change</h3><p>Long videos with structured segment prompts teach camera motion, event execution, revisit consistency, and reactive rendering.</p><a href="https://huggingface.co/datasets/Tommy-Bie/SeerWorld-Data" target="_blank" rel="noopener noreferrer">View dataset on Hugging Face <b>↗</b></a></article>
-        <article class="reveal"><span>SeerWorld-Bench</span><h3>Measure the entire causal chain</h3><p>Held-out and generated initial frames are screened against the training set using visual and semantic similarity audits.</p><a href="#results">See benchmark results <b>↓</b></a></article>
+        <article class="reveal"><span>SeerWorld-Bench</span><h3>Measure the entire causal chain</h3><p>Held-out and generated initial frames are screened against the training set using visual and semantic similarity audits.</p><a href="https://huggingface.co/datasets/Tommy-Bie/SeerWorld-Bench" target="_blank" rel="noopener noreferrer">View benchmark on Hugging Face <b>↗</b></a></article>
+      </div>
+    </section>
+
+    <section class="section data-examples" id="data-examples">
+      <div class="section-index" aria-hidden="true">04</div>
+      <div class="section-heading split reveal">
+        <div><p class="kicker">Inside SeerWorld-Data</p><h2>Structured examples.<br>Visible evolution.</h2></div>
+        <p>Selected training videos illustrate the range of subjects, environments, camera trajectories, and event-driven changes represented in SeerWorld-Data. Click any example to inspect the full clip.</p>
+      </div>
+      <div class="dataset-grid">
+        <article class="dataset-card reveal" data-video="assets/videos/data-01.mp4" tabindex="0" role="button" aria-label="Expand SeerWorld-Data sample 1">
+          <video muted loop playsinline preload="metadata" src="assets/videos/data-01.mp4"></video>
+          <div class="dataset-caption"><span>SeerWorld-Data</span><strong>Sample 01</strong><i>↗</i></div>
+        </article>
+        <article class="dataset-card reveal" data-video="assets/videos/data-02.mp4" tabindex="0" role="button" aria-label="Expand SeerWorld-Data sample 2">
+          <video muted loop playsinline preload="metadata" src="assets/videos/data-02.mp4"></video>
+          <div class="dataset-caption"><span>SeerWorld-Data</span><strong>Sample 02</strong><i>↗</i></div>
+        </article>
+        <article class="dataset-card reveal" data-video="assets/videos/data-03.mp4" tabindex="0" role="button" aria-label="Expand SeerWorld-Data sample 3">
+          <video muted loop playsinline preload="metadata" src="assets/videos/data-03.mp4"></video>
+          <div class="dataset-caption"><span>SeerWorld-Data</span><strong>Sample 03</strong><i>↗</i></div>
+        </article>
+        <article class="dataset-card reveal" data-video="assets/videos/data-04.mp4" tabindex="0" role="button" aria-label="Expand SeerWorld-Data sample 4">
+          <video muted loop playsinline preload="metadata" src="assets/videos/data-04.mp4"></video>
+          <div class="dataset-caption"><span>SeerWorld-Data</span><strong>Sample 04</strong><i>↗</i></div>
+        </article>
+        <article class="dataset-card reveal" data-video="assets/videos/data-05.mp4" tabindex="0" role="button" aria-label="Expand SeerWorld-Data sample 5">
+          <video muted loop playsinline preload="metadata" src="assets/videos/data-05.mp4"></video>
+          <div class="dataset-caption"><span>SeerWorld-Data</span><strong>Sample 05</strong><i>↗</i></div>
+        </article>
+        <article class="dataset-card reveal" data-video="assets/videos/data-06.mp4" tabindex="0" role="button" aria-label="Expand SeerWorld-Data sample 6">
+          <video muted loop playsinline preload="metadata" src="assets/videos/data-06.mp4"></video>
+          <div class="dataset-caption"><span>SeerWorld-Data</span><strong>Sample 06</strong><i>↗</i></div>
+        </article>
       </div>
     </section>
 
     <section class="section results" id="results">
-      <div class="section-index" aria-hidden="true">04</div>
+      <div class="section-index" aria-hidden="true">05</div>
       <div class="section-heading split reveal">
         <div><p class="kicker">Benchmark results</p><h2>Strong evolution.<br>Stable worlds.</h2></div>
         <p>SeerWorld dramatically improves complete task success while preserving subject identity, background continuity, visual integrity, and motion smoothness.</p>
@@ -184,37 +218,37 @@
     </section>
 
     <section class="section demos" id="demos">
-      <div class="section-index" aria-hidden="true">05</div>
+      <div class="section-index" aria-hidden="true">06</div>
       <div class="section-heading split reveal">
         <div><p class="kicker">Generated worlds</p><h2>Watch the world change.</h2></div>
         <p>Each rollout moves away from a subject, introduces an event, and returns to reveal the resulting state. Hover to inspect; click to expand.</p>
       </div>
       <div class="demo-grid">
-        <article class="demo-card demo-card-wide reveal" data-video="assets/videos/demo3_game.mp4" tabindex="0" role="button" aria-label="Expand armored guardian demo">
-          <video muted loop playsinline preload="metadata" src="assets/videos/demo3_game.mp4"></video>
+        <article class="demo-card demo-card-wide reveal" data-video="assets/videos/result-03.mp4" tabindex="0" role="button" aria-label="Expand armored guardian demo">
+          <video muted loop playsinline preload="metadata" src="assets/videos/result-03.mp4"></video>
           <div class="demo-overlay"><span>Game world</span><h3>Threat detected. Defensive stance.</h3><button type="button" aria-label="Play armored guardian demo">▶</button></div>
         </article>
-        <article class="demo-card reveal" data-video="assets/videos/demo6_natural.mp4" tabindex="0" role="button" aria-label="Expand natural world demo">
-          <video muted loop playsinline preload="metadata" src="assets/videos/demo6_natural.mp4"></video>
+        <article class="demo-card reveal" data-video="assets/videos/result-06.mp4" tabindex="0" role="button" aria-label="Expand natural world demo">
+          <video muted loop playsinline preload="metadata" src="assets/videos/result-06.mp4"></video>
           <div class="demo-overlay"><span>Natural world</span><h3>Events persist beyond view.</h3><button type="button" aria-label="Play natural world demo">▶</button></div>
         </article>
-        <article class="demo-card reveal" data-video="assets/videos/demo1_sandbox.mp4" tabindex="0" role="button" aria-label="Expand sandbox demo">
-          <video muted loop playsinline preload="metadata" src="assets/videos/demo1_sandbox.mp4"></video>
+        <article class="demo-card reveal" data-video="assets/videos/result-01.mp4" tabindex="0" role="button" aria-label="Expand sandbox demo">
+          <video muted loop playsinline preload="metadata" src="assets/videos/result-01.mp4"></video>
           <div class="demo-overlay"><span>Sandbox</span><h3>Return to an evolved scene.</h3><button type="button" aria-label="Play sandbox demo">▶</button></div>
         </article>
-        <article class="demo-card reveal" data-video="assets/videos/demo5_game.mp4" tabindex="0" role="button" aria-label="Expand game environment demo">
-          <video muted loop playsinline preload="metadata" src="assets/videos/demo5_game.mp4"></video>
+        <article class="demo-card reveal" data-video="assets/videos/result-05.mp4" tabindex="0" role="button" aria-label="Expand game environment demo">
+          <video muted loop playsinline preload="metadata" src="assets/videos/result-05.mp4"></video>
           <div class="demo-overlay"><span>Game world</span><h3>Reason, revisit, react.</h3><button type="button" aria-label="Play game environment demo">▶</button></div>
         </article>
-        <article class="demo-card demo-card-wide reveal" data-video="assets/videos/demo7_natural.mp4" tabindex="0" role="button" aria-label="Expand outdoor evolution demo">
-          <video muted loop playsinline preload="metadata" src="assets/videos/demo7_natural.mp4"></video>
+        <article class="demo-card demo-card-wide reveal" data-video="assets/videos/result-07.mp4" tabindex="0" role="button" aria-label="Expand outdoor evolution demo">
+          <video muted loop playsinline preload="metadata" src="assets/videos/result-07.mp4"></video>
           <div class="demo-overlay"><span>Natural world</span><h3>Identity holds as behavior changes.</h3><button type="button" aria-label="Play outdoor evolution demo">▶</button></div>
         </article>
       </div>
     </section>
 
     <section class="section video-overview" id="video">
-      <div class="section-index" aria-hidden="true">06</div>
+      <div class="section-index" aria-hidden="true">07</div>
       <div class="overview-placeholder reveal">
         <div class="overview-orbit" aria-hidden="true"><span></span><i></i></div>
         <p class="kicker">Video overview</p>
@@ -225,7 +259,7 @@
     </section>
 
     <section class="section citation" id="citation">
-      <div class="section-index" aria-hidden="true">07</div>
+      <div class="section-index" aria-hidden="true">08</div>
       <div class="citation-grid reveal">
         <div><p class="kicker">Citation</p><h2>Build worlds that remember—and evolve.</h2><p>The BibTeX entry will be added when the paper is publicly available.</p></div>
         <pre><code>@inproceedings{seerworld2027,

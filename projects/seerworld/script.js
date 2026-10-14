@@ -43,7 +43,7 @@ motionToggle?.addEventListener('click', () => {
     : '<path d="m8 5 11 7-11 7V5Z"/>';
 });
 
-const demoCards = [...document.querySelectorAll('.demo-card')];
+const demoCards = [...document.querySelectorAll('.demo-card, .dataset-card')];
 const demoObserver = new IntersectionObserver((entries) => {
   entries.forEach(({ target, isIntersecting }) => {
     const video = target.querySelector('video');
