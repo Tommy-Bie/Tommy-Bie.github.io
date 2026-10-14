@@ -89,6 +89,24 @@ h1 em { display: block; color: var(--blue); font-style: normal; font-weight: 500
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity .75s ease, transform .75s cubic-bezier(.22,1,.36,1); }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
 
+.workflow { color: #eef5f3; background: #07131d; }
+.workflow::before { content: ''; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(circle at 76% 26%,rgba(66,169,192,.14),transparent 34%), linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px), linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px); background-size: auto,72px 72px,72px 72px; }
+.workflow .section-index { color: rgba(255,255,255,.24); }
+.workflow .section-heading { position: relative; }
+.workflow .section-heading.split > p { color: rgba(237,245,244,.58); }
+.workflow-player { position: relative; }
+.workflow-video-shell { overflow: hidden; padding: 9px; border: 1px solid rgba(135,212,227,.24); border-radius: 28px; background: linear-gradient(145deg,rgba(135,212,227,.09),rgba(255,255,255,.025)); box-shadow: 0 38px 100px rgba(0,0,0,.38); }
+.workflow-video-shell video { display: block; width: 100%; aspect-ratio: 16/9; border-radius: 19px; background: #02070a; object-fit: cover; }
+.workflow-caption { display: flex; justify-content: space-between; align-items: flex-end; gap: 30px; padding: 20px 5px 17px; border-bottom: 1px solid var(--line-dark); }
+.workflow-caption p { margin: 0; color: rgba(237,245,244,.43); font: 600 10px var(--sans); letter-spacing: .08em; text-transform: uppercase; }
+.workflow-caption p:first-child { display: grid; gap: 5px; }
+.workflow-caption span { color: var(--amber-soft); font-size: 9px; letter-spacing: .14em; }
+.workflow-caption strong { color: #eef5f3; font-size: 14px; letter-spacing: -.01em; text-transform: none; }
+.workflow-timeline { display: grid; grid-template-columns: repeat(5,1fr); padding-top: 20px; }
+.workflow-timeline span { position: relative; padding: 0 16px 0 24px; color: rgba(237,245,244,.58); font: 700 11px var(--sans); letter-spacing: .1em; text-transform: uppercase; }
+.workflow-timeline span::before { content: ''; position: absolute; left: 4px; top: 50%; width: 7px; height: 7px; border: 1px solid var(--blue); border-radius: 50%; transform: translateY(-50%); box-shadow: 0 0 0 4px rgba(135,212,227,.08); }
+.workflow-timeline span:not(:last-child)::after { content: ''; position: absolute; top: 50%; left: calc(100% - 10px); width: 20px; height: 1px; background: linear-gradient(90deg,rgba(135,212,227,.42),rgba(241,169,78,.38)); }
+
 .challenge { background: var(--paper); }
 .challenge-grid { display: grid; grid-template-columns: 1.45fr .55fr; gap: 42px; align-items: stretch; }
 .challenge-figure { overflow: hidden; min-height: 460px; border: 1px solid var(--line-light); border-radius: var(--radius); background: #fff; box-shadow: 0 20px 60px rgba(18,29,35,.08); }
@@ -230,6 +248,10 @@ footer p { margin: 0; }
   .section-heading, .section-heading.split { grid-template-columns: 1fr; gap: 20px; margin-bottom: 36px; }
   .section-heading.split > p { font-size: 15px; }
   .challenge-figure { min-height: 0; }
+  .workflow-caption { display: grid; gap: 9px; }
+  .workflow-timeline { grid-template-columns: repeat(5,max-content); gap: 17px; overflow-x: auto; padding-bottom: 8px; }
+  .workflow-timeline span { padding-left: 20px; padding-right: 0; }
+  .workflow-timeline span::after { display: none; }
   .challenge-list { grid-template-columns: 1fr; gap: 0; }
   .stats-row { grid-template-columns: repeat(2,1fr); }
   .stats-row div { border-bottom: 1px solid var(--line-light); }

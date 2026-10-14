@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#07131d">
   <title>SeerWorld — Out-of-Sight World Evolution</title>
   <link rel="icon" href="assets/icons/eye-globe.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261014-2">
+  <link rel="stylesheet" href="styles.css?v=20261015-1">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -19,7 +19,7 @@
       <span>SeerWorld</span>
     </a>
     <nav class="nav-links" aria-label="Primary navigation">
-      <a href="#overview">Overview</a>
+      <a href="#workflow">Workflow</a>
       <a href="#method">Method</a>
       <a href="#data">Data</a>
       <a href="#results">Results</a>
@@ -84,8 +84,28 @@
       <a class="scroll-cue" href="#overview"><span>Scroll to explore</span><i aria-hidden="true"></i></a>
     </section>
 
-    <section class="section challenge" id="overview">
+    <section class="section workflow" id="workflow">
       <div class="section-index" aria-hidden="true">01</div>
+      <div class="section-heading split reveal">
+        <div><p class="kicker">VLM-guided rollout</p><h2>Watch SeerWorld observe, reason, and evolve.</h2></div>
+        <p>This recorded case follows one complete rollout: the visual renderer generates a segment, the VLM observes the realized world, updates memory, reasons about the event, and guides the next generation.</p>
+      </div>
+      <div class="workflow-player reveal">
+        <div class="workflow-video-shell">
+          <video controls playsinline preload="metadata" poster="assets/figures/vlm-rollout-poster.png" src="assets/videos/vlm-rollout-demo.mp4" aria-label="SeerWorld VLM-guided cathedral and gargoyle rollout"></video>
+        </div>
+        <div class="workflow-caption">
+          <p><span>Case study</span><strong>Ruined cathedral · Colossal gargoyle lands</strong></p>
+          <p>45.8 seconds · Recorded model rollout</p>
+        </div>
+        <div class="workflow-timeline" aria-label="Rollout stages">
+          <span>Observe</span><span>Remember</span><span>Reason</span><span>Render</span><span>Verify</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section challenge" id="overview">
+      <div class="section-index" aria-hidden="true">02</div>
       <div class="section-heading reveal">
         <p class="kicker">The challenge</p>
         <h2>A coherent world is more than a remembered frame.</h2>
@@ -104,7 +124,7 @@
     </section>
 
     <section class="section method" id="method">
-      <div class="section-index" aria-hidden="true">02</div>
+      <div class="section-index" aria-hidden="true">03</div>
       <div class="section-heading reveal">
         <p class="kicker">The framework</p>
         <h2>A reasoning brain.<br>A visual world renderer.</h2>
@@ -121,7 +141,7 @@
     </section>
 
     <section class="section data" id="data">
-      <div class="section-index" aria-hidden="true">03</div>
+      <div class="section-index" aria-hidden="true">04</div>
       <div class="section-heading split reveal">
         <div><p class="kicker">Data & benchmark</p><h2>Built for evolution beyond the frame.</h2></div>
         <p>SeerWorld-Data provides segment-level supervision for event realization, long-range continuity, and behavioral change. SeerWorld-Bench tests the full event–revisit–reaction chain.</p>
@@ -168,7 +188,7 @@
     </section>
 
     <section class="section results" id="results">
-      <div class="section-index" aria-hidden="true">04</div>
+      <div class="section-index" aria-hidden="true">05</div>
       <div class="section-heading split reveal">
         <div><p class="kicker">Benchmark results</p><h2>Consistent worlds.<br>Strong evolution.</h2></div>
         <p>SeerWorld improves out-of-sight reactive evolution while preserving visual quality and consistency.</p>
@@ -205,7 +225,7 @@
     </section>
 
     <section class="section demos" id="demos">
-      <div class="section-index" aria-hidden="true">05</div>
+      <div class="section-index" aria-hidden="true">06</div>
       <div class="section-heading reveal">
         <p class="kicker">SeerWorld world evolution demos</p>
         <h2>Watch the world change.</h2>
@@ -257,7 +277,7 @@
     </section>
 
     <section class="section citation" id="citation">
-      <div class="section-index" aria-hidden="true">06</div>
+      <div class="section-index" aria-hidden="true">07</div>
       <div class="citation-grid reveal">
         <div><p class="kicker">Citation</p><h2>Build worlds that remember, reason, and evolve.</h2><p>The BibTeX entry will be added when the paper is publicly available.</p></div>
         <pre><code>@inproceedings{seerworld2027,
