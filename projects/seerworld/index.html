@@ -62,14 +62,14 @@
       <div class="hero-cinema" aria-label="Selected SeerWorld video generations">
         <div class="cinema-rail">
           <figure class="cinema-card cinema-card-a">
-            <video muted loop playsinline autoplay preload="metadata" src="assets/videos/result-02.mp4"></video>
+            <video muted loop playsinline autoplay preload="metadata" poster="assets/posters/result-02.jpg" src="assets/videos/result-02.mp4"></video>
             <figcaption><span>01</span> event enters the world</figcaption>
           </figure>
           <figure class="cinema-card cinema-card-b">
-            <video muted loop playsinline autoplay preload="metadata" src="assets/videos/result-06.mp4"></video>
+            <video muted loop playsinline autoplay preload="metadata" poster="assets/posters/result-06.jpg" src="assets/videos/result-06.mp4"></video>
           </figure>
           <figure class="cinema-card cinema-card-c">
-            <video muted loop playsinline autoplay preload="metadata" src="assets/videos/result-04.mp4"></video>
+            <video muted loop playsinline autoplay preload="metadata" poster="assets/posters/result-04.jpg" src="assets/videos/result-04.mp4"></video>
           </figure>
         </div>
         <div class="cinema-meta" aria-hidden="true">
@@ -92,7 +92,7 @@
       </div>
       <div class="workflow-player reveal">
         <div class="workflow-video-shell">
-          <video controls playsinline preload="metadata" poster="assets/figures/vlm-rollout-poster.png?v=20261015-2" src="assets/videos/vlm-rollout-demo.mp4?v=20261015-2" aria-label="SeerWorld VLM-guided cathedral and gargoyle rollout"></video>
+          <video controls playsinline preload="none" poster="assets/posters/vlm-rollout-demo.jpg?v=20261015-3" src="assets/videos/vlm-rollout-demo.mp4?v=20261015-2" aria-label="SeerWorld VLM-guided cathedral and gargoyle rollout"></video>
         </div>
         <div class="workflow-caption">
           <p><span>Case study</span><strong>Ruined cathedral · Colossal gargoyle lands</strong></p>
@@ -112,7 +112,7 @@
       </div>
       <div class="challenge-grid">
         <div class="challenge-figure reveal">
-          <img src="assets/figures/challenge.png" alt="Comparison of out-of-sight evolution failures across video world models" loading="lazy">
+          <img src="assets/figures/challenge-preview.jpg" alt="Comparison of out-of-sight evolution failures across video world models" loading="lazy" decoding="async">
         </div>
         <div class="challenge-list reveal">
           <article><span>01</span><div><h3>Look away</h3><p>The camera leaves a visible subject and establishes an observation gap.</p></div></article>
@@ -130,7 +130,7 @@
         <p>SeerWorld separates world-state reasoning from rendering. A VLM continuously records what the renderer actually generated, then reasons about an appropriate subject state after an event is observed.</p>
       </div>
       <div class="method-stage reveal">
-        <img src="assets/figures/pipeline.png" alt="SeerWorld framework with VLM brain, autoregressive visual renderer, Identity-Anchored Attention, and two-stage training" loading="lazy">
+        <img src="assets/figures/pipeline-preview.jpg" alt="SeerWorld framework with VLM brain, autoregressive visual renderer, Identity-Anchored Attention, and two-stage training" loading="lazy" decoding="async">
       </div>
       <div class="method-cards">
         <article class="reveal"><b>01</b><h3>VLM brain reasoning</h3><p>The brain tracks persistent entities and world states, then reasons about event consequences before rendering each revisit.</p></article>
@@ -159,27 +159,27 @@
         </div>
         <div class="dataset-grid">
           <article class="dataset-card reveal" data-video="assets/videos/data-01.mp4" tabindex="0" role="button" aria-label="Expand a photorealistic-domain SeerWorld-Data example">
-            <video muted loop playsinline preload="metadata" src="assets/videos/data-01.mp4"></video>
+            <video muted loop playsinline preload="none" poster="assets/posters/data-01.jpg" src="assets/videos/data-01.mp4"></video>
             <div class="dataset-caption"><span>SeerWorld-Data</span><strong>Photorealistic domain</strong><i>↗</i></div>
           </article>
           <article class="dataset-card reveal" data-video="assets/videos/data-02.mp4" tabindex="0" role="button" aria-label="Expand a photorealistic-domain SeerWorld-Data example">
-            <video muted loop playsinline preload="metadata" src="assets/videos/data-02.mp4"></video>
+            <video muted loop playsinline preload="none" poster="assets/posters/data-02.jpg" src="assets/videos/data-02.mp4"></video>
             <div class="dataset-caption"><span>SeerWorld-Data</span><strong>Photorealistic domain</strong><i>↗</i></div>
           </article>
           <article class="dataset-card reveal" data-video="assets/videos/data-03.mp4" tabindex="0" role="button" aria-label="Expand a photorealistic-domain SeerWorld-Data example">
-            <video muted loop playsinline preload="metadata" src="assets/videos/data-03.mp4"></video>
+            <video muted loop playsinline preload="none" poster="assets/posters/data-03.jpg" src="assets/videos/data-03.mp4"></video>
             <div class="dataset-caption"><span>SeerWorld-Data</span><strong>Photorealistic domain</strong><i>↗</i></div>
           </article>
           <article class="dataset-card reveal" data-video="assets/videos/data-04.mp4" tabindex="0" role="button" aria-label="Expand a game-domain SeerWorld-Data example">
-            <video muted loop playsinline preload="metadata" src="assets/videos/data-04.mp4"></video>
+            <video muted loop playsinline preload="none" poster="assets/posters/data-04.jpg" src="assets/videos/data-04.mp4"></video>
             <div class="dataset-caption"><span>SeerWorld-Data</span><strong>Game domain</strong><i>↗</i></div>
           </article>
           <article class="dataset-card reveal" data-video="assets/videos/data-05.mp4" tabindex="0" role="button" aria-label="Expand a game-domain SeerWorld-Data example">
-            <video muted loop playsinline preload="metadata" src="assets/videos/data-05.mp4"></video>
+            <video muted loop playsinline preload="none" poster="assets/posters/data-05.jpg" src="assets/videos/data-05.mp4"></video>
             <div class="dataset-caption"><span>SeerWorld-Data</span><strong>Game domain</strong><i>↗</i></div>
           </article>
           <article class="dataset-card reveal" data-video="assets/videos/data-06.mp4" tabindex="0" role="button" aria-label="Expand a game-domain SeerWorld-Data example">
-            <video muted loop playsinline preload="metadata" src="assets/videos/data-06.mp4"></video>
+            <video muted loop playsinline preload="none" poster="assets/posters/data-06.jpg" src="assets/videos/data-06.mp4"></video>
             <div class="dataset-caption"><span>SeerWorld-Data</span><strong>Game domain</strong><i>↗</i></div>
           </article>
         </div>
@@ -231,42 +231,42 @@
       </div>
       <div class="demo-grid">
         <article class="demo-card reveal" data-video="assets/videos/result-04.mp4" tabindex="0" role="button" aria-label="Expand gargoyle and knight demo">
-          <video muted loop playsinline preload="metadata" src="assets/videos/result-04.mp4"></video>
+          <video muted loop playsinline preload="none" poster="assets/posters/result-04.jpg" src="assets/videos/result-04.mp4"></video>
           <div class="demo-overlay">
             <div class="demo-caption"><p><strong>Event</strong> A colossal gargoyle lands in the cathedral.</p><p><strong>Reaction</strong> The knight raises his shield and braces.</p></div>
             <button type="button" aria-label="Play gargoyle and knight demo">▶</button>
           </div>
         </article>
         <article class="demo-card reveal" data-video="assets/videos/result-01.mp4" tabindex="0" role="button" aria-label="Expand lava and explorer demo">
-          <video muted loop playsinline preload="metadata" src="assets/videos/result-01.mp4"></video>
+          <video muted loop playsinline preload="none" poster="assets/posters/result-01.jpg" src="assets/videos/result-01.mp4"></video>
           <div class="demo-overlay">
             <div class="demo-caption"><p><strong>Event</strong> Lava flows into the stone passage.</p><p><strong>Reaction</strong> The explorer climbs onto the steps.</p></div>
             <button type="button" aria-label="Play lava and explorer demo">▶</button>
           </div>
         </article>
         <article class="demo-card reveal" data-video="assets/videos/result-06.mp4" tabindex="0" role="button" aria-label="Expand burst pipe and bathroom reaction demo">
-          <video muted loop playsinline preload="metadata" src="assets/videos/result-06.mp4"></video>
+          <video muted loop playsinline preload="none" poster="assets/posters/result-06.jpg" src="assets/videos/result-06.mp4"></video>
           <div class="demo-overlay">
             <div class="demo-caption"><p><strong>Event</strong> A shower pipe bursts and floods the floor.</p><p><strong>Reaction</strong> The man steps back with a towel in hand.</p></div>
             <button type="button" aria-label="Play burst pipe and bathroom reaction demo">▶</button>
           </div>
         </article>
         <article class="demo-card reveal" data-video="assets/videos/result-03.mp4" tabindex="0" role="button" aria-label="Expand spectral knight and ranger demo">
-          <video muted loop playsinline preload="metadata" src="assets/videos/result-03.mp4"></video>
+          <video muted loop playsinline preload="none" poster="assets/posters/result-03.jpg" src="assets/videos/result-03.mp4"></video>
           <div class="demo-overlay">
             <div class="demo-caption"><p><strong>Event</strong> A spectral knight forms from the marsh fog.</p><p><strong>Reaction</strong> The ranger stands and draws her sword.</p></div>
             <button type="button" aria-label="Play spectral knight and ranger demo">▶</button>
           </div>
         </article>
         <article class="demo-card reveal" data-video="assets/videos/result-02.mp4" tabindex="0" role="button" aria-label="Expand monster and archer demo">
-          <video muted loop playsinline preload="metadata" src="assets/videos/result-02.mp4"></video>
+          <video muted loop playsinline preload="none" poster="assets/posters/result-02.jpg" src="assets/videos/result-02.mp4"></video>
           <div class="demo-overlay">
             <div class="demo-caption"><p><strong>Event</strong> A dark monster appears by the boulder.</p><p><strong>Reaction</strong> The archer nocks an arrow and takes aim.</p></div>
             <button type="button" aria-label="Play monster and archer demo">▶</button>
           </div>
         </article>
         <article class="demo-card reveal" data-video="assets/videos/result-07.mp4" tabindex="0" role="button" aria-label="Expand flooded path and backpacker demo">
-          <video muted loop playsinline preload="metadata" src="assets/videos/result-07.mp4"></video>
+          <video muted loop playsinline preload="none" poster="assets/posters/result-07.jpg" src="assets/videos/result-07.mp4"></video>
           <div class="demo-overlay">
             <div class="demo-caption"><p><strong>Event</strong> Water bursts from the canal and floods the path.</p><p><strong>Reaction</strong> The backpacker turns around and lowers the newspaper.</p></div>
             <button type="button" aria-label="Play flooded path and backpacker demo">▶</button>
