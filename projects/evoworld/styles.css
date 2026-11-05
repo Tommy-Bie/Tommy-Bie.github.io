@@ -200,7 +200,7 @@ tr.ours small { margin-left: 6px; padding: 3px 6px; border-radius: 999px; backgr
 .citation-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 70px; align-items: center; }
 .citation .kicker { color: #694214; }
 .citation p { max-width: 500px; color: rgba(7,19,29,.62); }
-.citation pre { overflow-x: auto; margin: 0; padding: 30px; border-radius: 20px; color: #dce9e8; background: #091820; box-shadow: 0 24px 60px rgba(63,40,12,.18); font: 12px/1.8 ui-monospace,SFMono-Regular,Menlo,monospace; }
+.citation pre { overflow-wrap: break-word; white-space: pre-wrap; margin: 0; padding: 30px; border-radius: 20px; color: #dce9e8; background: #091820; box-shadow: 0 24px 60px rgba(63,40,12,.18); font: 12px/1.8 ui-monospace,SFMono-Regular,Menlo,monospace; }
 
 footer { display: grid; grid-template-columns: 1fr auto auto auto; align-items: center; gap: 30px; padding: 32px max(5vw,40px); color: rgba(237,245,244,.55); background: #040c12; font-size: 11px; }
 footer .brand { color: #fff; }
